@@ -1,3 +1,6 @@
 [submodule "FlyFi_cpp"]
 	path = FlyFi_cpp
 	url = https://github.com/coon42/FlyFi_cpp.git
+[submodule "Floppy-Music--midis-"]
+	path = Floppy-Music--midis-
+	url = https://github.com/coon42/Floppy-Music--midis-.git
