@@ -1,0 +1,3 @@
+[submodule "FlyFi"]
+	path = FlyFi
+	url = https://github.com/coon42legacy/FlyFi.git
