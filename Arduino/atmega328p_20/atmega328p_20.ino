@@ -75,8 +75,7 @@ void setup() {
 
   Serial.println("resetting drive...");
   resetDrive();
-
-  sendLedStatus(0x01);
+  
   Serial.print("Floppy controller initialized with MIDI channel ");
   Serial.print(getFloppyAddress(), DEC);
   Serial.println(". (Build Version: " BUILD_VER ")");
