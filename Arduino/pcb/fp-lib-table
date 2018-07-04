@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name floppy_power)(type KiCad)(uri "$(KIPRJMOD)/floppy_power.pretty")(options "")(descr ""))
+)
