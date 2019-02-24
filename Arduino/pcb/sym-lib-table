@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name floppyorgel-rescue)(type Legacy)(uri ${KIPRJMOD}/floppyorgel-rescue.lib)(options "")(descr ""))
+  (lib (name floppy-bus-connector)(type Legacy)(uri ${KIPRJMOD}/footprints/floppy-bus-connector.lib)(options "")(descr ""))
+  (lib (name buck-converter)(type Legacy)(uri ${KIPRJMOD}/footprints/buck-converter.lib)(options "")(descr ""))
+  (lib (name ftdi)(type Legacy)(uri ${KIPRJMOD}/footprints/ftdi.lib)(options "")(descr ""))
+)
