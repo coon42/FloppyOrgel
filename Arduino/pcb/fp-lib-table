@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name floppy_power)(type KiCad)(uri "$(KIPRJMOD)/floppy_power.pretty")(options "")(descr ""))
+  (lib (name shrouded)(type KiCad)(uri "$(KIPRJMOD)/shrouded.pretty")(options "")(descr ""))
 )

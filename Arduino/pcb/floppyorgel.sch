@@ -1,39 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:floppyorgel-rescue
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:floppyorgel-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -48,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA328P-AU U1
+L floppyorgel-rescue:ATMEGA328P-AU-atmel U1
 U 1 1 5B354CB4
 P 5200 3050
 F 0 "U1" H 4450 4300 50  0000 L BNN
@@ -59,7 +26,7 @@ F 3 "" H 5200 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x17_Odd_Even J7
+L floppyorgel-rescue:Conn_02x17_Odd_Even-conn J7
 U 1 1 5B355051
 P 7750 3100
 F 0 "J7" H 7800 4000 50  0000 C CNN
@@ -70,73 +37,18 @@ F 3 "" H 7750 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x05_Odd_Even J1
-U 1 1 5B355D21
-P 1400 2400
-F 0 "J1" H 1450 2700 50  0000 C CNN
-F 1 "Floppy-Bus" H 1450 2100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 1400 2400 50  0001 C CNN
-F 3 "" H 1400 2400 50  0001 C CNN
-	1    1400 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_02x05_Odd_Even J2
-U 1 1 5B355F22
-P 1400 3250
-F 0 "J2" H 1450 3550 50  0000 C CNN
-F 1 "Floppy-Bus" H 1450 2950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 1400 3250 50  0001 C CNN
-F 3 "" H 1400 3250 50  0001 C CNN
-	1    1400 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x06 J3
-U 1 1 5B356171
-P 1500 4600
-F 0 "J3" H 1500 4900 50  0000 C CNN
-F 1 "FTDI" H 1500 4200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 1500 4600 50  0001 C CNN
-F 3 "" H 1500 4600 50  0001 C CNN
-	1    1500 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_DIP_x06 SW1
+L floppyorgel-rescue:SW_DIP_x06-switches SW1
 U 1 1 5B369E39
-P 2500 2750
-F 0 "SW1" H 2500 3200 50  0000 C CNN
-F 1 "Bus Address Select" H 2500 2400 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_DIP_x6_W7.62mm_Slide" H 2500 2750 50  0001 C CNN
-F 3 "" H 2500 2750 50  0001 C CNN
-	1    2500 2750
+P 3350 3100
+F 0 "SW1" H 3350 3550 50  0000 C CNN
+F 1 "Bus Address Select" H 3350 2750 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_DIP_x6_W7.62mm_Slide" H 3350 3100 50  0001 C CNN
+F 3 "" H 3350 3100 50  0001 C CNN
+	1    3350 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J4
-U 1 1 5B36ADE9
-P 2050 1350
-F 0 "J4" H 2050 1550 50  0000 C CNN
-F 1 "Buck Converter 5V" H 2050 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2050 1350 50  0001 C CNN
-F 3 "" H 2050 1350 50  0001 C CNN
-	1    2050 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x04 J6
-U 1 1 5B36AE7A
-P 3000 1350
-F 0 "J6" H 3000 1550 50  0000 C CNN
-F 1 "Buck Converter 12V" H 3000 1050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3000 1350 50  0001 C CNN
-F 3 "" H 3000 1350 50  0001 C CNN
-	1    3000 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_02x04_Counter_Clockwise J5
+L floppyorgel-rescue:Conn_02x04_Counter_Clockwise-conn J5
 U 1 1 5B36C6D4
 P 2950 4300
 F 0 "J5" H 3000 4500 50  0000 C CNN
@@ -147,7 +59,7 @@ F 3 "" H 2950 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x01 J8
+L floppyorgel-rescue:Conn_02x01-conn J8
 U 1 1 5B3D1533
 P 4300 1300
 F 0 "J8" H 4350 1400 50  0000 C CNN
@@ -158,7 +70,7 @@ F 3 "" H 4300 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SW_Push_Dual-RESCUE-floppyorgel SW2
+L floppyorgel-rescue:SW_Push_Dual-RESCUE-floppyorgel SW2
 U 1 1 5B36C9BB
 P 7200 1450
 F 0 "SW2" H 7250 1550 50  0000 L CNN
@@ -169,14 +81,102 @@ F 3 "" H 7200 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J9
+L floppyorgel-rescue:Conn_01x04-conn J9
 U 1 1 5B3D2EB7
-P 8750 2400
-F 0 "J9" H 8750 2600 50  0000 C CNN
-F 1 "Floppz Power" H 8750 2100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8750 2400 50  0001 C CNN
-F 3 "" H 8750 2400 50  0001 C CNN
-	1    8750 2400
+P 9050 3000
+F 0 "J9" H 9050 3200 50  0000 C CNN
+F 1 "Floppy Power" H 9050 2700 50  0000 C CNN
+F 2 "floppy_power:Pin_Header_Straight_1x04_Pitch2.54mm" H 9050 3000 50  0001 C CNN
+F 3 "" H 9050 3000 50  0001 C CNN
+	1    9050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppyorgel-rescue:74HC595-74xx U2
+U 1 1 5B3D46F0
+P 8450 1300
+F 0 "U2" H 8600 1900 50  0000 C CNN
+F 1 "74HC595" H 8450 700 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 8450 1300 50  0001 C CNN
+F 3 "" H 8450 1300 50  0001 C CNN
+	1    8450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppyorgel-rescue:74LS166-74xx U3
+U 1 1 5B3D4A29
+P 10150 1350
+F 0 "U3" H 10150 1600 50  0000 C CNN
+F 1 "74LS166" H 10150 1400 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 10150 1350 50  0001 C CNN
+F 3 "" H 10150 1350 50  0001 C CNN
+	1    10150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppyorgel-rescue:Crystal-device Y1
+U 1 1 5B3E670D
+P 3500 2300
+F 0 "Y1" H 3500 2450 50  0000 C CNN
+F 1 "20 Mhz Crystal" H 3500 2150 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-4H_Vertical" H 3500 2300 50  0001 C CNN
+F 3 "" H 3500 2300 50  0001 C CNN
+	1    3500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppy-bus-connector:Floppy-Bus J?
+U 1 1 5C74CBD4
+P 950 2350
+F 0 "J?" H 1150 2767 50  0000 C CNN
+F 1 "Floppy-Bus" H 1150 2676 50  0000 C CNN
+F 2 "" H 950 2350 50  0001 C CNN
+F 3 "" H 950 2350 50  0001 C CNN
+	1    950  2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppy-bus-connector:Floppy-Bus J?
+U 1 1 5C74CCE8
+P 950 3150
+F 0 "J?" H 1150 3567 50  0000 C CNN
+F 1 "Floppy-Bus" H 1150 3476 50  0000 C CNN
+F 2 "" H 950 3150 50  0001 C CNN
+F 3 "" H 950 3150 50  0001 C CNN
+	1    950  3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L buck-converter:Buck-Converter J?
+U 1 1 5C74DF35
+P 1400 1250
+F 0 "J?" H 1450 1600 50  0000 L CNN
+F 1 "Buck-Converter-5V" H 1150 1500 50  0000 L CNN
+F 2 "" H 1400 1250 50  0001 C CNN
+F 3 "" H 1400 1250 50  0001 C CNN
+	1    1400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L buck-converter:Buck-Converter J?
+U 1 1 5C74E0B3
+P 2500 1250
+F 0 "J?" H 2550 1600 50  0000 L CNN
+F 1 "Buck-Converter-12V" H 2250 1500 50  0000 L CNN
+F 2 "" H 2500 1250 50  0001 C CNN
+F 3 "" H 2500 1250 50  0001 C CNN
+	1    2500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ftdi:FTDI J?
+U 1 1 5C74FB67
+P 1300 4250
+F 0 "J?" H 1530 4242 50  0000 L CNN
+F 1 "FTDI" H 1530 4151 50  0000 L CNN
+F 2 "" H 1300 4250 50  0001 C CNN
+F 3 "" H 1300 4250 50  0001 C CNN
+	1    1300 4250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
