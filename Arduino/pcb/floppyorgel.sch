@@ -26,17 +26,6 @@ F 3 "" H 5200 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L floppyorgel-rescue:Conn_02x17_Odd_Even-conn J7
-U 1 1 5B355051
-P 7750 3100
-F 0 "J7" H 7800 4000 50  0000 C CNN
-F 1 "IBM_PC_IDC_Connector" H 7800 2200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_2x17_Pitch2.54mm" H 7750 3100 50  0001 C CNN
-F 3 "" H 7750 3100 50  0001 C CNN
-	1    7750 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L floppyorgel-rescue:SW_DIP_x06-switches SW1
 U 1 1 5B369E39
 P 3350 3100
@@ -78,17 +67,6 @@ F 1 "Reset Button" H 7200 1180 50  0000 C CNN
 F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7200 1650 50  0001 C CNN
 F 3 "" H 7200 1650 50  0001 C CNN
 	1    7200 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L floppyorgel-rescue:Conn_01x04-conn J9
-U 1 1 5B3D2EB7
-P 9050 3000
-F 0 "J9" H 9050 3200 50  0000 C CNN
-F 1 "Floppy Power" H 9050 2700 50  0000 C CNN
-F 2 "floppy_power:Pin_Header_Straight_1x04_Pitch2.54mm" H 9050 3000 50  0001 C CNN
-F 3 "" H 9050 3000 50  0001 C CNN
-	1    9050 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -172,11 +150,33 @@ $Comp
 L ftdi:FTDI J?
 U 1 1 5C74FB67
 P 1300 4250
-F 0 "J?" H 1530 4242 50  0000 L CNN
-F 1 "FTDI" H 1530 4151 50  0000 L CNN
+F 0 "J?" H 1350 4700 50  0000 L CNN
+F 1 "FTDI" H 1300 4600 50  0000 L CNN
 F 2 "" H 1300 4250 50  0001 C CNN
 F 3 "" H 1300 4250 50  0001 C CNN
 	1    1300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppy-power:Floppy-Power J?
+U 1 1 5C731D0B
+P 9300 2850
+F 0 "J?" H 9350 3200 50  0000 L CNN
+F 1 "Floppy-Power" H 9150 3100 50  0000 L CNN
+F 2 "" H 9300 2850 50  0001 C CNN
+F 3 "" H 9300 2850 50  0001 C CNN
+	1    9300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ibm_pc_floppy_idc:IBM_PC_Floppy_IDC J?
+U 1 1 5C732AFB
+P 7600 3500
+F 0 "J?" H 7800 4550 50  0000 C CNN
+F 1 "IBM_PC_Floppy_IDC" H 7850 4450 50  0000 C CNN
+F 2 "" H 7600 3500 50  0001 C CNN
+F 3 "" H 7600 3500 50  0001 C CNN
+	1    7600 3500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -3,4 +3,6 @@
   (lib (name floppy-bus-connector)(type Legacy)(uri ${KIPRJMOD}/footprints/floppy-bus-connector.lib)(options "")(descr ""))
   (lib (name buck-converter)(type Legacy)(uri ${KIPRJMOD}/footprints/buck-converter.lib)(options "")(descr ""))
   (lib (name ftdi)(type Legacy)(uri ${KIPRJMOD}/footprints/ftdi.lib)(options "")(descr ""))
+  (lib (name floppy-power)(type Legacy)(uri ${KIPRJMOD}/footprints/floppy-power.lib)(options "")(descr ""))
+  (lib (name ibm_pc_floppy_idc)(type Legacy)(uri ${KIPRJMOD}/footprints/ibm_pc_floppy_idc.lib)(options "")(descr ""))
 )
