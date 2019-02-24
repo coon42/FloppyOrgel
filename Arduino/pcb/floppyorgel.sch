@@ -103,78 +103,78 @@ F 3 "" H 3500 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L floppy-bus-connector:Floppy-Bus J?
+L floppy-bus-connector:Floppy-Bus J1
 U 1 1 5C74CBD4
 P 950 2350
-F 0 "J?" H 1150 2767 50  0000 C CNN
+F 0 "J1" H 1150 2767 50  0000 C CNN
 F 1 "Floppy-Bus" H 1150 2676 50  0000 C CNN
-F 2 "" H 950 2350 50  0001 C CNN
+F 2 "shrouded:Shrouded_Header_2x05_Pitch2.54mm" H 950 2350 50  0001 C CNN
 F 3 "" H 950 2350 50  0001 C CNN
 	1    950  2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L floppy-bus-connector:Floppy-Bus J?
+L floppy-bus-connector:Floppy-Bus J2
 U 1 1 5C74CCE8
 P 950 3150
-F 0 "J?" H 1150 3567 50  0000 C CNN
+F 0 "J2" H 1150 3567 50  0000 C CNN
 F 1 "Floppy-Bus" H 1150 3476 50  0000 C CNN
-F 2 "" H 950 3150 50  0001 C CNN
+F 2 "shrouded:Shrouded_Header_2x05_Pitch2.54mm" H 950 3150 50  0001 C CNN
 F 3 "" H 950 3150 50  0001 C CNN
 	1    950  3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L buck-converter:Buck-Converter J?
+L buck-converter:Buck-Converter J4
 U 1 1 5C74DF35
 P 1400 1250
-F 0 "J?" H 1450 1600 50  0000 L CNN
+F 0 "J4" H 1450 1600 50  0000 L CNN
 F 1 "Buck-Converter-5V" H 1150 1500 50  0000 L CNN
-F 2 "" H 1400 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1400 1250 50  0001 C CNN
 F 3 "" H 1400 1250 50  0001 C CNN
 	1    1400 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L buck-converter:Buck-Converter J?
+L buck-converter:Buck-Converter J6
 U 1 1 5C74E0B3
 P 2500 1250
-F 0 "J?" H 2550 1600 50  0000 L CNN
+F 0 "J6" H 2550 1600 50  0000 L CNN
 F 1 "Buck-Converter-12V" H 2250 1500 50  0000 L CNN
-F 2 "" H 2500 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2500 1250 50  0001 C CNN
 F 3 "" H 2500 1250 50  0001 C CNN
 	1    2500 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L ftdi:FTDI J?
+L ftdi:FTDI J3
 U 1 1 5C74FB67
 P 1300 4250
-F 0 "J?" H 1350 4700 50  0000 L CNN
+F 0 "J3" H 1350 4700 50  0000 L CNN
 F 1 "FTDI" H 1300 4600 50  0000 L CNN
-F 2 "" H 1300 4250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1300 4250 50  0001 C CNN
 F 3 "" H 1300 4250 50  0001 C CNN
 	1    1300 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L floppy-power:Floppy-Power J?
+L floppy-power:Floppy-Power J9
 U 1 1 5C731D0B
 P 9300 2850
-F 0 "J?" H 9350 3200 50  0000 L CNN
+F 0 "J9" H 9350 3200 50  0000 L CNN
 F 1 "Floppy-Power" H 9150 3100 50  0000 L CNN
-F 2 "" H 9300 2850 50  0001 C CNN
+F 2 "floppy_power:Floppy_Power_1x04_Pitch2.54mm" H 9300 2850 50  0001 C CNN
 F 3 "" H 9300 2850 50  0001 C CNN
 	1    9300 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L ibm_pc_floppy_idc:IBM_PC_Floppy_IDC J?
+L ibm_pc_floppy_idc:IBM_PC_Floppy_IDC J7
 U 1 1 5C732AFB
 P 7600 3500
-F 0 "J?" H 7800 4550 50  0000 C CNN
+F 0 "J7" H 7800 4550 50  0000 C CNN
 F 1 "IBM_PC_Floppy_IDC" H 7850 4450 50  0000 C CNN
-F 2 "" H 7600 3500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Horizontal" H 7600 3500 50  0001 C CNN
 F 3 "" H 7600 3500 50  0001 C CNN
 	1    7600 3500
 	1    0    0    -1  
