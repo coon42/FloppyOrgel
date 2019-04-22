@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Floppy Orgel"
-Date "2018-06-28"
+Date "2019-04-22"
 Rev "0"
 Comp "coon@c-base.org"
 Comment1 ""
@@ -61,12 +61,12 @@ $EndComp
 $Comp
 L floppyorgel-rescue:SW_Push_Dual-RESCUE-floppyorgel SW2
 U 1 1 5B36C9BB
-P 6825 4275
-F 0 "SW2" H 6875 4375 50  0000 L CNN
-F 1 "Reset Button" H 6825 4005 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 6825 4475 50  0001 C CNN
-F 3 "" H 6825 4475 50  0001 C CNN
-	1    6825 4275
+P 2350 4575
+F 0 "SW2" H 2400 4675 50  0000 L CNN
+F 1 "Reset Button" H 2350 4305 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 2350 4775 50  0001 C CNN
+F 3 "" H 2350 4775 50  0001 C CNN
+	1    2350 4575
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -116,12 +116,12 @@ $EndComp
 $Comp
 L ftdi:FTDI J3
 U 1 1 5C74FB67
-P 1475 5775
-F 0 "J3" H 1525 5250 50  0000 L CNN
-F 1 "FTDI" H 1500 5350 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1475 5775 50  0001 C CNN
-F 3 "" H 1475 5775 50  0001 C CNN
-	1    1475 5775
+P 1400 5450
+F 0 "J3" H 1450 4925 50  0000 L CNN
+F 1 "FTDI" H 1425 5025 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1400 5450 50  0001 C CNN
+F 3 "" H 1400 5450 50  0001 C CNN
+	1    1400 5450
 	1    0    0    1   
 $EndComp
 $Comp
@@ -218,41 +218,41 @@ F 3 "~" H 7050 3725 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6625 4375 6625 4275
+	2150 4675 2150 4575
 Wire Wire Line
-	6625 4475 6625 4375
-Connection ~ 6625 4375
+	2150 4775 2150 4675
+Connection ~ 2150 4675
 $Comp
 L power:GND #PWR?
 U 1 1 5CBED317
-P 7375 4675
-F 0 "#PWR?" H 7375 4425 50  0001 C CNN
-F 1 "GND" H 7380 4502 50  0000 C CNN
-F 2 "" H 7375 4675 50  0001 C CNN
-F 3 "" H 7375 4675 50  0001 C CNN
-	1    7375 4675
+P 2900 5275
+F 0 "#PWR?" H 2900 5025 50  0001 C CNN
+F 1 "GND" H 2905 5102 50  0000 C CNN
+F 2 "" H 2900 5275 50  0001 C CNN
+F 3 "" H 2900 5275 50  0001 C CNN
+	1    2900 5275
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5CBEE8A7
-P 6375 4125
-F 0 "R?" H 6445 4171 50  0000 L CNN
-F 1 "4K7" H 6445 4080 50  0000 L CNN
-F 2 "" V 6305 4125 50  0001 C CNN
-F 3 "~" H 6375 4125 50  0001 C CNN
-	1    6375 4125
+U 0 0 5CBEE8A7
+P 1950 4425
+F 0 "R?" H 2020 4471 50  0000 L CNN
+F 1 "10K" H 2020 4380 50  0000 L CNN
+F 2 "" V 1880 4425 50  0001 C CNN
+F 3 "~" H 1950 4425 50  0001 C CNN
+	0    1950 4425
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5CBEF211
-P 6375 3975
-F 0 "#PWR?" H 6375 3825 50  0001 C CNN
-F 1 "VCC" H 6392 4148 50  0000 C CNN
-F 2 "" H 6375 3975 50  0001 C CNN
-F 3 "" H 6375 3975 50  0001 C CNN
-	1    6375 3975
+P 1950 4275
+F 0 "#PWR?" H 1950 4125 50  0001 C CNN
+F 1 "VCC" H 1967 4448 50  0000 C CNN
+F 2 "" H 1950 4275 50  0001 C CNN
+F 3 "" H 1950 4275 50  0001 C CNN
+	1    1950 4275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -642,21 +642,11 @@ Connection ~ 8300 2025
 Text GLabel 10400 1875 2    50   Input ~ 0
 MISO
 Wire Wire Line
-	5825 4375 6375 4375
+	2900 4575 2900 4775
 Wire Wire Line
-	6375 4275 6375 4375
-Connection ~ 6375 4375
+	2550 4575 2900 4575
 Wire Wire Line
-	6375 4375 6625 4375
-Wire Wire Line
-	7375 4275 7375 4475
-Connection ~ 7375 4475
-Wire Wire Line
-	7375 4475 7375 4675
-Wire Wire Line
-	7025 4275 7375 4275
-Wire Wire Line
-	7025 4475 7375 4475
+	2550 4775 2900 4775
 $Comp
 L power:VCC #PWR?
 U 1 1 5CBE0146
@@ -704,32 +694,32 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CBEBC38
-P 1275 6125
-F 0 "#PWR?" H 1275 5875 50  0001 C CNN
-F 1 "GND" H 1280 5952 50  0000 C CNN
-F 2 "" H 1275 6125 50  0001 C CNN
-F 3 "" H 1275 6125 50  0001 C CNN
-	1    1275 6125
+P 1200 5800
+F 0 "#PWR?" H 1200 5550 50  0001 C CNN
+F 1 "GND" H 1205 5627 50  0000 C CNN
+F 2 "" H 1200 5800 50  0001 C CNN
+F 3 "" H 1200 5800 50  0001 C CNN
+	1    1200 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1275 5975 1275 6125
+	1200 5650 1200 5800
 Text GLabel 3450 6075 0    50   Input ~ 0
 VCC_BUS
 Text GLabel 3450 6275 0    50   Input ~ 0
 VCC_ISP
-Text GLabel 1100 5575 0    50   Input ~ 0
+Text GLabel 1025 5250 0    50   Input ~ 0
 BUS_RX
-Text GLabel 1100 5675 0    50   Input ~ 0
+Text GLabel 1025 5350 0    50   Input ~ 0
 BUS_TX
 Wire Wire Line
-	1100 5575 1275 5575
+	1025 5250 1200 5250
 Wire Wire Line
-	1100 5675 1275 5675
-Text GLabel 1100 5775 0    50   Input ~ 0
+	1025 5350 1200 5350
+Text GLabel 1025 5450 0    50   Input ~ 0
 VCC_ISP
 Wire Wire Line
-	1100 5775 1275 5775
+	1025 5450 1200 5450
 Text GLabel 1750 7400 2    50   Input ~ 0
 VCC_BUS
 Wire Wire Line
@@ -1116,4 +1106,56 @@ Wire Wire Line
 Connection ~ 10575 1325
 Wire Wire Line
 	4450 875  4450 1275
+NoConn ~ 1200 5550
+Text GLabel 5875 4375 2    50   Input ~ 0
+RESET
+Text GLabel 1625 4675 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	5825 4375 5875 4375
+$Comp
+L Device:C C?
+U 0 0 5CC1EA5F
+P 1725 4425
+F 0 "C?" H 1425 4500 50  0000 L CNN
+F 1 "100nF" H 1375 4400 50  0000 L CNN
+F 2 "" H 1763 4275 50  0001 C CNN
+F 3 "~" H 1725 4425 50  0001 C CNN
+	0    1725 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4125 1725 4125
+Wire Wire Line
+	1625 4675 1725 4675
+Wire Wire Line
+	1725 4275 1725 4125
+Wire Wire Line
+	1200 4125 1200 5150
+Wire Wire Line
+	1725 4575 1725 4675
+Connection ~ 1725 4675
+Wire Wire Line
+	1725 4675 1950 4675
+Wire Wire Line
+	1950 4575 1950 4675
+Connection ~ 1950 4675
+Wire Wire Line
+	1950 4675 2150 4675
+$Comp
+L Device:R R?
+U 0 0 5CC73FA1
+P 2900 5075
+F 0 "R?" H 2970 5121 50  0000 L CNN
+F 1 "4K7" H 2970 5030 50  0000 L CNN
+F 2 "" V 2830 5075 50  0001 C CNN
+F 3 "~" H 2900 5075 50  0001 C CNN
+	0    2900 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4925 2900 4775
+Connection ~ 2900 4775
+Wire Wire Line
+	2900 5275 2900 5225
 $EndSCHEMATC
