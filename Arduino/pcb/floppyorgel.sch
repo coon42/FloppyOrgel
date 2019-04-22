@@ -49,13 +49,13 @@ F 3 "" H 1875 2450 50  0001 C CNN
 $EndComp
 $Comp
 L Connector:Conn_01x03_Male J8
-U 0 0 5B3D1533
+U 1 1 5B3D1533
 P 3650 6175
 F 0 "J8" H 3575 6025 50  0000 C CNN
 F 1 "Power Select" H 3725 5925 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3650 6175 50  0001 C CNN
 F 3 "" H 3650 6175 50  0001 C CNN
-	0    3650 6175
+	1    3650 6175
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -222,13 +222,13 @@ Wire Wire Line
 	6700 3050 6400 3050
 $Comp
 L Device:C C?
-U 0 0 5CBD5A59
+U 1 1 5CBD5A59
 P 7625 2950
 F 0 "C?" V 7373 2950 50  0000 C CNN
 F 1 "22pF" V 7464 2950 50  0000 C CNN
 F 2 "" H 7663 2800 50  0001 C CNN
 F 3 "~" H 7625 2950 50  0001 C CNN
-	0    7625 2950
+	1    7625 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -244,13 +244,13 @@ F 3 "" H 7950 3500 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 0 0 5CBD635A
+U 1 1 5CBD635A
 P 7625 3250
 F 0 "C?" V 7375 3250 50  0000 C CNN
 F 1 "22pF" V 7475 3250 50  0000 C CNN
 F 2 "" H 7663 3100 50  0001 C CNN
 F 3 "~" H 7625 3250 50  0001 C CNN
-	0    7625 3250
+	1    7625 3250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
