@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -14,4 +14,218 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Interface_UART:MAX485E J5
+U 1 1 5CF1EB96
+P 7275 3925
+F 0 "J5" H 6900 4525 50  0000 C CNN
+F 1 "MAX485 Socket" H 6875 4425 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 7275 3925 50  0001 C CNN
+F 3 "" H 7275 3925 50  0001 C CNN
+	1    7275 3925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 2475 8325 2475
+Wire Wire Line
+	7625 2675 8325 2675
+Wire Wire Line
+	7625 2775 8325 2775
+NoConn ~ 9125 2375
+NoConn ~ 9125 2475
+NoConn ~ 9125 2675
+NoConn ~ 9125 2775
+Text Notes 8325 2950 0    50   ~ 0
+Output to next module
+$Comp
+L power:GND #PWR011
+U 1 1 5CF1EBB2
+P 6575 2925
+F 0 "#PWR011" H 6575 2675 50  0001 C CNN
+F 1 "GND" H 6580 2752 50  0000 C CNN
+F 2 "" H 6575 2925 50  0001 C CNN
+F 3 "" H 6575 2925 50  0001 C CNN
+	1    6575 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 2475 6575 2475
+Wire Wire Line
+	6575 2475 6575 2925
+$Comp
+L power:VCC #PWR012
+U 1 1 5CF1EBBB
+P 7275 3325
+F 0 "#PWR012" H 7275 3175 50  0001 C CNN
+F 1 "VCC" H 7292 3498 50  0000 C CNN
+F 2 "" H 7275 3325 50  0001 C CNN
+F 3 "" H 7275 3325 50  0001 C CNN
+	1    7275 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5CF1EBC1
+P 7275 4625
+F 0 "#PWR013" H 7275 4375 50  0001 C CNN
+F 1 "GND" H 7280 4452 50  0000 C CNN
+F 2 "" H 7275 4625 50  0001 C CNN
+F 3 "" H 7275 4625 50  0001 C CNN
+	1    7275 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 2675 6775 2675
+Wire Wire Line
+	7275 3425 7275 3325
+Wire Wire Line
+	7275 4525 7275 4625
+Wire Wire Line
+	6825 2775 6825 3825
+Wire Wire Line
+	6825 3825 6875 3825
+Wire Wire Line
+	6775 2675 6775 4125
+Wire Wire Line
+	6775 4125 6875 4125
+Wire Wire Line
+	7675 3825 7925 3825
+Wire Wire Line
+	7675 4125 7925 4125
+Wire Wire Line
+	7675 4025 8425 4025
+Wire Wire Line
+	7675 3925 8425 3925
+Wire Wire Line
+	8425 3925 8425 4025
+Connection ~ 8425 4025
+$Comp
+L power:GND #PWR014
+U 1 1 5CF1EBD6
+P 8425 4125
+F 0 "#PWR014" H 8425 3875 50  0001 C CNN
+F 1 "GND" H 8430 3952 50  0000 C CNN
+F 2 "" H 8425 4125 50  0001 C CNN
+F 3 "" H 8425 4125 50  0001 C CNN
+	1    8425 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8425 4025 8425 4125
+Text HLabel 7925 3825 2    50   Output ~ 0
+TX
+Text HLabel 7925 4125 2    50   Input ~ 0
+RX
+Text HLabel 6575 2375 0    50   Output ~ 0
+BUS_POWER
+$Comp
+L Device:C C?
+U 1 1 5D17F33C
+P 6300 4750
+AR Path="/5D17F33C" Ref="C?"  Part="1" 
+AR Path="/5CCFEC3E/5D17F33C" Ref="C?"  Part="1" 
+AR Path="/5CD1E0A5/5D17F33C" Ref="C1"  Part="1" 
+F 0 "C1" H 6075 4950 50  0000 L CNN
+F 1 "100nF" H 6025 4850 50  0000 L CNN
+F 2 "" H 6338 4600 50  0001 C CNN
+F 3 "~" H 6300 4750 50  0001 C CNN
+	1    6300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D17F342
+P 6300 4475
+AR Path="/5CCFEC3E/5D17F342" Ref="#PWR?"  Part="1" 
+AR Path="/5CD1E0A5/5D17F342" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 6300 4325 50  0001 C CNN
+F 1 "VCC" H 6317 4648 50  0000 C CNN
+F 2 "" H 6300 4475 50  0001 C CNN
+F 3 "" H 6300 4475 50  0001 C CNN
+	1    6300 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D17F348
+P 6300 5000
+AR Path="/5CCFEC3E/5D17F348" Ref="#PWR?"  Part="1" 
+AR Path="/5CD1E0A5/5D17F348" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 6300 4750 50  0001 C CNN
+F 1 "GND" H 6305 4827 50  0000 C CNN
+F 2 "" H 6300 5000 50  0001 C CNN
+F 3 "" H 6300 5000 50  0001 C CNN
+	1    6300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4475 6300 4600
+Wire Wire Line
+	6300 4900 6300 5000
+Text Notes 5925 4425 0    50   ~ 0
+Bypass
+$Comp
+L Device:C C?
+U 1 1 5D182EF8
+P 6600 4750
+AR Path="/5D182EF8" Ref="C?"  Part="1" 
+AR Path="/5CCFEC3E/5D182EF8" Ref="C?"  Part="1" 
+AR Path="/5CD1E0A5/5D182EF8" Ref="C2"  Part="1" 
+F 0 "C2" H 6375 4950 50  0000 L CNN
+F 1 "100nF" H 6325 4850 50  0000 L CNN
+F 2 "" H 6638 4600 50  0001 C CNN
+F 3 "~" H 6600 4750 50  0001 C CNN
+	1    6600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4475 6600 4600
+Wire Wire Line
+	6600 4900 6600 5000
+Wire Wire Line
+	6600 4475 6300 4475
+Connection ~ 6300 4475
+Wire Wire Line
+	6600 5000 6300 5000
+Connection ~ 6300 5000
+$Comp
+L floppy-bus-connector:Floppy-Bus J4
+U 1 1 5D1AADEF
+P 7025 2575
+F 0 "J4" H 7225 2992 50  0000 C CNN
+F 1 "Floppy-Bus" H 7225 2901 50  0000 C CNN
+F 2 "" H 7025 2575 50  0001 C CNN
+F 3 "" H 7025 2575 50  0001 C CNN
+	1    7025 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppy-bus-connector:Floppy-Bus J6
+U 1 1 5D1ABE61
+P 8525 2575
+F 0 "J6" H 8725 2992 50  0000 C CNN
+F 1 "Floppy-Bus" H 8725 2901 50  0000 C CNN
+F 2 "" H 8525 2575 50  0001 C CNN
+F 3 "" H 8525 2575 50  0001 C CNN
+	1    8525 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6575 2375 6725 2375
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5D1B34B5
+P 6725 2375
+F 0 "#FLG01" H 6725 2450 50  0001 C CNN
+F 1 "PWR_FLAG" H 6725 2548 50  0000 C CNN
+F 2 "" H 6725 2375 50  0001 C CNN
+F 3 "~" H 6725 2375 50  0001 C CNN
+	1    6725 2375
+	1    0    0    -1  
+$EndComp
+Connection ~ 6725 2375
+Wire Wire Line
+	6725 2375 6825 2375
+Wire Wire Line
+	7625 2375 8325 2375
 $EndSCHEMATC
