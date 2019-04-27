@@ -22,7 +22,7 @@ AR Path="/5CFDD059" Ref="C?"  Part="1"
 AR Path="/5CD31258/5CFDD059" Ref="C3"  Part="1" 
 F 0 "C3" H 3543 4671 50  0000 L CNN
 F 1 "1500uF" H 3543 4580 50  0000 L CNN
-F 2 "" H 3463 4475 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Axial_L30.0mm_D18.0mm_P35.00mm_Horizontal" H 3463 4475 50  0001 C CNN
 F 3 "~" H 3425 4625 50  0001 C CNN
 	1    3425 4625
 	1    0    0    -1  
@@ -109,7 +109,7 @@ U 1 1 5D19DC09
 P 4375 4650
 F 0 "J6" H 4605 4642 50  0000 L CNN
 F 1 "Buck-Converter-12V" H 4605 4551 50  0000 L CNN
-F 2 "" H 4375 4650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4375 4650 50  0001 C CNN
 F 3 "" H 4375 4650 50  0001 C CNN
 	1    4375 4650
 	1    0    0    -1  
@@ -120,7 +120,7 @@ U 1 1 5D19E626
 P 4375 3825
 F 0 "J5" H 4605 3817 50  0000 L CNN
 F 1 "Buck-Converter-5V" H 4605 3726 50  0000 L CNN
-F 2 "" H 4375 3825 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4375 3825 50  0001 C CNN
 F 3 "" H 4375 3825 50  0001 C CNN
 	1    4375 3825
 	1    0    0    -1  
