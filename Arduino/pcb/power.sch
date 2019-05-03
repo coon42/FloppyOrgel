@@ -14,32 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:CP C?
-U 1 1 5CFDD059
-P 3425 4625
-AR Path="/5CFDD059" Ref="C?"  Part="1" 
-AR Path="/5CD31258/5CFDD059" Ref="C3"  Part="1" 
-F 0 "C3" H 3543 4671 50  0000 L CNN
-F 1 "1500uF" H 3543 4580 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Axial_L30.0mm_D18.0mm_P35.00mm_Horizontal" H 3463 4475 50  0001 C CNN
-F 3 "~" H 3425 4625 50  0001 C CNN
-	1    3425 4625
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CFDD061
-P 3425 4775
-AR Path="/5CFDD061" Ref="#PWR?"  Part="1" 
-AR Path="/5CD31258/5CFDD061" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 3425 4525 50  0001 C CNN
-F 1 "GND" H 3430 4602 50  0000 C CNN
-F 2 "" H 3425 4775 50  0001 C CNN
-F 3 "" H 3425 4775 50  0001 C CNN
-	1    3425 4775
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4175 3725 4175 3825
 Wire Wire Line
@@ -56,8 +30,8 @@ L power:GND #PWR?
 U 1 1 5CFDD037
 P 4050 4750
 AR Path="/5CFDD037" Ref="#PWR?"  Part="1" 
-AR Path="/5CD31258/5CFDD037" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 4050 4500 50  0001 C CNN
+AR Path="/5CD31258/5CFDD037" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 4050 4500 50  0001 C CNN
 F 1 "GND" H 4055 4577 50  0000 C CNN
 F 2 "" H 4050 4750 50  0001 C CNN
 F 3 "" H 4050 4750 50  0001 C CNN
@@ -73,10 +47,10 @@ Wire Wire Line
 Wire Wire Line
 	4175 5000 4300 5000
 $Comp
-L power:GND #PWR09
+L power:GND #PWR08
 U 1 1 5D0DAB46
 P 4050 3925
-F 0 "#PWR09" H 4050 3675 50  0001 C CNN
+F 0 "#PWR08" H 4050 3675 50  0001 C CNN
 F 1 "GND" H 4055 3752 50  0000 C CNN
 F 2 "" H 4050 3925 50  0001 C CNN
 F 3 "" H 4050 3925 50  0001 C CNN
@@ -89,13 +63,6 @@ Wire Wire Line
 	4175 4750 4050 4750
 Text HLabel 4300 5000 2    50   Output ~ 0
 12V_BUS
-Wire Wire Line
-	3200 4225 3425 4225
-Wire Wire Line
-	3425 4475 3425 4225
-Connection ~ 3425 4225
-Wire Wire Line
-	3425 4225 3925 4225
 Connection ~ 3925 4225
 Wire Wire Line
 	3925 4225 3925 4650
@@ -126,4 +93,6 @@ F 3 "" H 4375 3825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4175 3825
+Wire Wire Line
+	3200 4225 3925 4225
 $EndSCHEMATC
