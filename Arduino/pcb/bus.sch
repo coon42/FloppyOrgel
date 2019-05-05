@@ -127,7 +127,7 @@ AR Path="/5CCFEC3E/5D17F33C" Ref="C?"  Part="1"
 AR Path="/5CD1E0A5/5D17F33C" Ref="C1"  Part="1" 
 F 0 "C1" H 6075 4950 50  0000 L CNN
 F 1 "100nF" H 6025 4850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 6338 4600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6338 4600 50  0001 C CNN
 F 3 "~" H 6300 4750 50  0001 C CNN
 	1    6300 4750
 	1    0    0    -1  
@@ -164,30 +164,6 @@ Wire Wire Line
 	6300 4900 6300 5000
 Text Notes 5925 4425 0    50   ~ 0
 Bypass
-$Comp
-L Device:C C?
-U 1 1 5D182EF8
-P 6600 4750
-AR Path="/5D182EF8" Ref="C?"  Part="1" 
-AR Path="/5CCFEC3E/5D182EF8" Ref="C?"  Part="1" 
-AR Path="/5CD1E0A5/5D182EF8" Ref="C2"  Part="1" 
-F 0 "C2" H 6375 4950 50  0000 L CNN
-F 1 "100nF" H 6325 4850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 6638 4600 50  0001 C CNN
-F 3 "~" H 6600 4750 50  0001 C CNN
-	1    6600 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 4475 6600 4600
-Wire Wire Line
-	6600 4900 6600 5000
-Wire Wire Line
-	6600 4475 6300 4475
-Connection ~ 6300 4475
-Wire Wire Line
-	6600 5000 6300 5000
-Connection ~ 6300 5000
 $Comp
 L floppy-bus-connector:Floppy-Bus J2
 U 1 1 5D1AADEF
