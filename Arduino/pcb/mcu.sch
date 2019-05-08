@@ -307,7 +307,7 @@ F 3 "" H 3625 4775 50  0001 C CNN
 $EndComp
 Connection ~ 3625 4775
 Wire Wire Line
-	5825 3925 6700 3925
+	5825 3925 6500 3925
 Wire Wire Line
 	6825 3925 7250 3925
 Wire Wire Line
@@ -641,4 +641,119 @@ Wire Wire Line
 Wire Wire Line
 	10050 2000 10050 1900
 Connection ~ 10050 1900
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CD22E49
+P 8975 4675
+F 0 "TP1" V 8929 4863 50  0000 L CNN
+F 1 "MISO" V 9020 4863 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9175 4675 50  0001 C CNN
+F 3 "~" H 9175 4675 50  0001 C CNN
+	1    8975 4675
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CD25980
+P 8975 5075
+F 0 "TP3" V 8929 5263 50  0000 L CNN
+F 1 "SCK" V 9020 5263 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9175 5075 50  0001 C CNN
+F 3 "~" H 9175 5075 50  0001 C CNN
+	1    8975 5075
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CD25E18
+P 8975 5475
+F 0 "TP5" V 8929 5663 50  0000 L CNN
+F 1 "VCC" V 9020 5663 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9175 5475 50  0001 C CNN
+F 3 "~" H 9175 5475 50  0001 C CNN
+	1    8975 5475
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5CD2620B
+P 8975 4875
+F 0 "TP2" V 8929 5063 50  0000 L CNN
+F 1 "MOSI" V 9020 5063 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9175 4875 50  0001 C CNN
+F 3 "~" H 9175 4875 50  0001 C CNN
+	1    8975 4875
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CD26549
+P 8975 5275
+F 0 "TP4" V 8929 5463 50  0000 L CNN
+F 1 "RESET" V 9020 5463 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9175 5275 50  0001 C CNN
+F 3 "~" H 9175 5275 50  0001 C CNN
+	1    8975 5275
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CD26781
+P 8975 5675
+F 0 "TP6" V 8929 5863 50  0000 L CNN
+F 1 "GND" V 9020 5863 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9175 5675 50  0001 C CNN
+F 3 "~" H 9175 5675 50  0001 C CNN
+	1    8975 5675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8975 4675 8875 4675
+Wire Wire Line
+	8975 4875 8875 4875
+Wire Wire Line
+	8975 5075 8875 5075
+Wire Wire Line
+	8975 5275 8875 5275
+Text HLabel 8875 4675 0    50   Input ~ 0
+MISO
+Text HLabel 8875 4875 0    50   Input ~ 0
+MOSI
+Text HLabel 8875 5075 0    50   Input ~ 0
+SCK
+Text Label 6500 3825 1    50   ~ 0
+RESET
+Wire Wire Line
+	6500 3825 6500 3925
+Connection ~ 6500 3925
+Wire Wire Line
+	6500 3925 6700 3925
+Text Label 8875 5275 2    50   ~ 0
+RESET
+$Comp
+L power:VCC #PWR0101
+U 1 1 5CD9E006
+P 8525 5475
+F 0 "#PWR0101" H 8525 5325 50  0001 C CNN
+F 1 "VCC" H 8542 5648 50  0000 C CNN
+F 2 "" H 8525 5475 50  0001 C CNN
+F 3 "" H 8525 5475 50  0001 C CNN
+	1    8525 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CDA0796
+P 8525 5675
+F 0 "#PWR0102" H 8525 5425 50  0001 C CNN
+F 1 "GND" H 8530 5502 50  0000 C CNN
+F 2 "" H 8525 5675 50  0001 C CNN
+F 3 "" H 8525 5675 50  0001 C CNN
+	1    8525 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 5475 8975 5475
+Wire Wire Line
+	8525 5675 8975 5675
 $EndSCHEMATC
