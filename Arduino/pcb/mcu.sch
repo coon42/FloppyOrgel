@@ -756,4 +756,34 @@ Wire Wire Line
 	8525 5475 8975 5475
 Wire Wire Line
 	8525 5675 8975 5675
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CD64B91
+P 10300 3400
+F 0 "TP7" V 10254 3588 50  0000 L CNN
+F 1 "SDA" V 10345 3588 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10500 3400 50  0001 C CNN
+F 3 "~" H 10500 3400 50  0001 C CNN
+	1    10300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5CD65B22
+P 10300 3625
+F 0 "TP8" V 10254 3813 50  0000 L CNN
+F 1 "SDL" V 10345 3813 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10500 3625 50  0001 C CNN
+F 3 "~" H 10500 3625 50  0001 C CNN
+	1    10300 3625
+	0    1    1    0   
+$EndComp
+Text Label 10200 3400 2    50   ~ 0
+SDA
+Text Label 10200 3625 2    50   ~ 0
+SCL
+Wire Wire Line
+	10300 3400 10200 3400
+Wire Wire Line
+	10300 3625 10200 3625
 $EndSCHEMATC
