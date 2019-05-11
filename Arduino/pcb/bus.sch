@@ -25,33 +25,8 @@ F 3 "" H 7275 3925 50  0001 C CNN
 	1    7275 3925
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	7625 2475 8325 2475
-Wire Wire Line
-	7625 2675 8325 2675
-Wire Wire Line
-	7625 2775 8325 2775
-NoConn ~ 9125 2375
-NoConn ~ 9125 2475
-NoConn ~ 9125 2675
-NoConn ~ 9125 2775
 Text Notes 8325 2950 0    50   ~ 0
 Output to next module
-$Comp
-L power:GND #PWR04
-U 1 1 5CF1EBB2
-P 6575 2925
-F 0 "#PWR04" H 6575 2675 50  0001 C CNN
-F 1 "GND" H 6580 2752 50  0000 C CNN
-F 2 "" H 6575 2925 50  0001 C CNN
-F 3 "" H 6575 2925 50  0001 C CNN
-	1    6575 2925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6825 2475 6575 2475
-Wire Wire Line
-	6575 2475 6575 2925
 $Comp
 L power:VCC #PWR05
 U 1 1 5CF1EBBB
@@ -75,19 +50,9 @@ F 3 "" H 7275 4625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6825 2675 6775 2675
-Wire Wire Line
 	7275 3425 7275 3325
 Wire Wire Line
 	7275 4525 7275 4625
-Wire Wire Line
-	6825 2775 6825 3825
-Wire Wire Line
-	6825 3825 6875 3825
-Wire Wire Line
-	6775 2675 6775 4125
-Wire Wire Line
-	6775 4125 6875 4125
 Wire Wire Line
 	7675 3825 7925 3825
 Wire Wire Line
@@ -116,7 +81,7 @@ Text HLabel 7925 3825 2    50   Output ~ 0
 TX
 Text HLabel 7925 4125 2    50   Input ~ 0
 RX
-Text HLabel 6575 2375 0    50   Output ~ 0
+Text HLabel 6500 1675 0    50   Output ~ 0
 BUS_POWER
 $Comp
 L Device:C C?
@@ -165,16 +130,27 @@ Wire Wire Line
 Text Notes 5925 4425 0    50   ~ 0
 Bypass
 $Comp
-L floppy-bus-connector:Floppy-Bus J2
-U 1 1 5D1AADEF
-P 7025 2575
-F 0 "J2" H 7225 2992 50  0000 C CNN
-F 1 "Floppy-Bus" H 7225 2901 50  0000 C CNN
-F 2 "shrouded:Shrouded_Header_2x05_Pitch2.54mm" H 7025 2575 50  0001 C CNN
-F 3 "" H 7025 2575 50  0001 C CNN
-	1    7025 2575
+L power:PWR_FLAG #FLG01
+U 1 1 5D1B34B5
+P 6600 1575
+F 0 "#FLG01" H 6600 1650 50  0001 C CNN
+F 1 "PWR_FLAG" H 6600 1748 50  0000 C CNN
+F 2 "" H 6600 1575 50  0001 C CNN
+F 3 "~" H 6600 1575 50  0001 C CNN
+	1    6600 1575
 	1    0    0    -1  
 $EndComp
+Text Label 6700 1675 0    50   ~ 0
+20V
+Text Label 6775 4125 2    50   ~ 0
+BP
+Text Label 6775 3825 2    50   ~ 0
+BM
+Wire Wire Line
+	6700 1675 6600 1675
+Wire Wire Line
+	6500 1675 6600 1675
+Connection ~ 6600 1675
 $Comp
 L floppy-bus-connector:Floppy-Bus J4
 U 1 1 5D1ABE61
@@ -187,21 +163,69 @@ F 3 "" H 8525 2575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6575 2375 6725 2375
+	6600 1575 6600 1675
+Wire Wire Line
+	6875 3825 6775 3825
+Wire Wire Line
+	6875 4125 6775 4125
+Text Label 6825 2375 2    50   ~ 0
+20V
+Text Label 7625 2375 0    50   ~ 0
+20V
+Text Label 8325 2375 2    50   ~ 0
+20V
+Text Label 9125 2375 0    50   ~ 0
+20V
 $Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5D1B34B5
-P 6725 2375
-F 0 "#FLG01" H 6725 2450 50  0001 C CNN
-F 1 "PWR_FLAG" H 6725 2548 50  0000 C CNN
-F 2 "" H 6725 2375 50  0001 C CNN
-F 3 "~" H 6725 2375 50  0001 C CNN
-	1    6725 2375
+L power:GND #PWR?
+U 1 1 5CDB5675
+P 8175 1775
+F 0 "#PWR?" H 8175 1525 50  0001 C CNN
+F 1 "GND" H 8180 1602 50  0000 C CNN
+F 2 "" H 8175 1775 50  0001 C CNN
+F 3 "" H 8175 1775 50  0001 C CNN
+	1    8175 1775
 	1    0    0    -1  
 $EndComp
-Connection ~ 6725 2375
+Text Label 8075 1675 2    50   ~ 0
+GND
 Wire Wire Line
-	6725 2375 6825 2375
+	8075 1675 8175 1675
 Wire Wire Line
-	7625 2375 8325 2375
+	8175 1675 8175 1775
+Text Label 7625 2475 0    50   ~ 0
+GND
+Text Label 8325 2475 2    50   ~ 0
+GND
+Text Label 9125 2475 0    50   ~ 0
+GND
+Text Label 6825 2475 2    50   ~ 0
+GND
+$Comp
+L floppy-bus-connector:Floppy-Bus J2
+U 1 1 5D1AADEF
+P 7025 2575
+F 0 "J2" H 7225 2992 50  0000 C CNN
+F 1 "Floppy-Bus" H 7225 2901 50  0000 C CNN
+F 2 "shrouded:Shrouded_Header_2x05_Pitch2.54mm" H 7025 2575 50  0001 C CNN
+F 3 "" H 7025 2575 50  0001 C CNN
+	1    7025 2575
+	1    0    0    -1  
+$EndComp
+Text Label 6825 2675 2    50   ~ 0
+BP
+Text Label 6825 2775 2    50   ~ 0
+BM
+Text Label 7625 2675 0    50   ~ 0
+BP
+Text Label 9125 2675 0    50   ~ 0
+BP
+Text Label 8325 2675 2    50   ~ 0
+BP
+Text Label 8325 2775 2    50   ~ 0
+BM
+Text Label 7625 2775 0    50   ~ 0
+BM
+Text Label 9125 2775 0    50   ~ 0
+BM
 $EndSCHEMATC
