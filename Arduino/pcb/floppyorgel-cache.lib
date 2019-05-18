@@ -658,6 +658,21 @@ X Pin_9 9 -200 400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# ibm_pc_floppy_idc_Logo
+#
+DEF ibm_pc_floppy_idc_Logo T 0 0 N N 1 F N
+F0 "T" 25 50 50 H I C CNN
+F1 "ibm_pc_floppy_idc_Logo" 25 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 -125 -100 125 0 1 0 N
+S -100 125 150 125 0 1 0 N
+S 150 -125 -100 -125 0 1 0 N
+S 150 125 150 -125 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # power_GND
 #
 DEF power_GND #PWR 0 0 Y Y 1 F P
