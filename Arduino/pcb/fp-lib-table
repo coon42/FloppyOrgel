@@ -3,4 +3,5 @@
   (lib (name floppy_power)(type KiCad)(uri ${KIPRJMOD}/footprints/floppy_power.pretty)(options "")(descr ""))
   (lib (name dil)(type KiCad)(uri "$(KIPRJMOD)/w_pth_circuits.pretty")(options "")(descr ""))
   (lib (name logo)(type KiCad)(uri /home/coon/c-base/FloppyOrgel/Arduino/pcb/footprints/logo.pretty)(options "")(descr ""))
+  (lib (name ibm_idc_floppy_connector)(type KiCad)(uri /home/coon/c-base/FloppyOrgel/Arduino/pcb/footprints/ibm_pc_floppy_idc.pretty)(options "")(descr ""))
 )

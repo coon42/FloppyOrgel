@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/coon/c-base/FloppyOrgel/Arduino/pcb/floppyorgel.sch)
-    (date "Sat 18 May 2019 02:51:47 AM CEST")
+    (date "Sat 18 May 2019 10:29:33 PM CEST")
     (tool "Eeschema 5.1.2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -122,7 +122,7 @@
       (tstamp 5D19E626))
     (comp (ref J8)
       (value IBM_PC_Floppy_IDC)
-      (footprint Connector_PinSocket_2.54mm:PinSocket_2x17_P2.54mm_Horizontal)
+      (footprint ibm_idc_floppy_connector:ibm_pc_floppy_idc)
       (libsource (lib ibm_pc_floppy_idc) (part IBM_PC_Floppy_IDC) (description ""))
       (sheetpath (names /Floppy/) (tstamps /5CD0EE48/))
       (tstamp 5CE26438))

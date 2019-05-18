@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:floppyorgel-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -32,7 +33,7 @@ AR Path="/5CE26438" Ref="J?"  Part="1"
 AR Path="/5CD0EE48/5CE26438" Ref="J8"  Part="1" 
 F 0 "J8" H 7075 4475 50  0000 C CNN
 F 1 "IBM_PC_Floppy_IDC" H 7125 4375 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x17_P2.54mm_Horizontal" H 6875 3425 50  0001 C CNN
+F 2 "ibm_idc_floppy_connector:ibm_pc_floppy_idc" H 6875 3425 50  0001 C CNN
 F 3 "" H 6875 3425 50  0001 C CNN
 	1    6875 3425
 	-1   0    0    -1  
