@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:floppyorgel-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -162,4 +161,15 @@ Wire Wire Line
 	5375 4575 5375 5325
 Wire Wire Line
 	5025 5225 5800 5225
+$Comp
+L logo:logo L1
+U 1 1 5CDF6702
+P 4250 2325
+F 0 "L1" H 4250 2400 50  0001 C CNN
+F 1 "logo" H 4175 2350 50  0000 L CNN
+F 2 "logo:logo" H 4250 2325 50  0001 C CNN
+F 3 "" H 4250 2325 50  0001 C CNN
+	1    4250 2325
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

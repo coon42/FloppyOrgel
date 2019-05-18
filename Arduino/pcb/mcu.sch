@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:floppyorgel-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -786,15 +785,4 @@ Wire Wire Line
 	10300 3400 10200 3400
 Wire Wire Line
 	10300 3625 10200 3625
-$Comp
-L ibm_pc_floppy_idc:Logo T1
-U 1 1 5CE030CA
-P 6150 1725
-F 0 "T1" H 6175 1775 50  0001 C CNN
-F 1 "Logo" H 6328 1725 50  0000 L CNN
-F 2 "logo:logo" H 6150 1725 50  0001 C CNN
-F 3 "" H 6150 1725 50  0001 C CNN
-	1    6150 1725
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
