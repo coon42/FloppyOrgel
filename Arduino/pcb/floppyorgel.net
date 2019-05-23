@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/coon/c-base/FloppyOrgel/Arduino/pcb/floppyorgel.sch)
-    (date "Sun 19 May 2019 01:12:29 AM CEST")
+    (date "Thu 23 May 2019 10:18:39 PM CEST")
     (tool "Eeschema 5.1.2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -400,7 +400,7 @@
       (tstamp 5CE57929))
     (comp (ref D1)
       (value LED_RGB)
-      (footprint LED_SMD:LED_RGB_1210)
+      (footprint rgb_led:rgb_led_0805_2012Metric)
       (datasheet ~)
       (libsource (lib Device) (part LED_RGB) (description "RGB LED, 6 pin package"))
       (sheetpath (names /Led/) (tstamps /5CD3FBA6/))
