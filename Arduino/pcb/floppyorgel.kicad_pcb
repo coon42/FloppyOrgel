@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 19)
+    (drawings 20)
     (tracks 0)
     (zones 0)
     (modules 56)
@@ -1368,7 +1368,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric (layer B.Cu) (tedit 5B36C52B) (tstamp 5CDF69F5)
-    (at 123.698 125.984)
+    (at 123.698 126.365)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags capacitor)
     (path /5CD1E0A5/5D17F33C)
@@ -2297,7 +2297,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric (layer B.Cu) (tedit 5B36C52B) (tstamp 5CDF5559)
-    (at 123.698 129.032 180)
+    (at 123.698 128.651 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CD3FBA6/5CDFACA1)
@@ -2332,7 +2332,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric (layer B.Cu) (tedit 5B36C52B) (tstamp 5CDF556A)
-    (at 129.794 129.032)
+    (at 129.8575 128.651)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CD3FBA6/5CDFA92E)
@@ -2366,8 +2366,8 @@
     )
   )
 
-  (module Resistor_SMD:R_0805_2012Metric (layer B.Cu) (tedit 5B36C52B) (tstamp 5CDF7155)
-    (at 129.8725 125.984 180)
+  (module Resistor_SMD:R_0805_2012Metric (layer B.Cu) (tedit 5B36C52B) (tstamp 5CF2EEF7)
+    (at 129.8725 126.365 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CD3FBA6/5CDFAF66)
@@ -2402,7 +2402,7 @@
   )
 
   (module logo:logo (layer B.Cu) (tedit 0) (tstamp 5CEEE99E)
-    (at 108.204 138.938 180)
+    (at 107.569 138.938 180)
     (path /5CDF6702)
     (fp_text reference L1 (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
@@ -2906,6 +2906,7 @@
     )
   )
 
+  (gr_line (start 149.987 102.87) (end 147.1295 100.0125) (layer Edge.Cuts) (width 0.15))
   (gr_text "Green                   Black" (at 110.49 148.844) (layer F.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.15)))
   )
@@ -2928,7 +2929,7 @@
   (gr_text Reset (at 144.7165 148.6535) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Bus Address Select" (at 127.762 136.144) (layer F.SilkS)
+  (gr_text "Bus Address Select" (at 129.4765 136.0805) (layer F.SilkS) (tstamp 5CF2EC29)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Floppy Module 3.0" (at 127.6985 120.2055) (layer B.SilkS)
@@ -2969,19 +2970,9 @@
   )
   (gr_line (start 100 150) (end 100 100) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 150 150) (end 100 150) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 150 100) (end 150 150) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 100 100) (end 150 100) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 149.987 102.87) (end 150 150) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 100 100) (end 147.1295 100.0125) (angle 90) (layer Edge.Cuts) (width 0.15))
 
-  (zone (net 3) (net_name GND) (layer F.Cu) (tstamp 5CDF7A86) (hatch edge 0.508)
-    (connect_pads (clearance 0.508))
-    (min_thickness 0.254)
-    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
-    (polygon
-      (pts
-        (xy 151.638 99.06) (xy 98.806 99.06) (xy 98.806 151.384) (xy 151.638 151.384)
-      )
-    )
-  )
   (zone (net 3) (net_name GND) (layer B.Cu) (tstamp 5CDF7A83) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
@@ -2990,6 +2981,16 @@
       (pts
         (xy 150.622 99.06) (xy 98.806 99.06) (xy 98.806 151.384) (xy 151.638 151.384) (xy 151.638 99.06)
         (xy 150.368 99.06)
+      )
+    )
+  )
+  (zone (net 3) (net_name GND) (layer F.Cu) (tstamp 5CDF7A86) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 151.638 99.06) (xy 98.806 99.06) (xy 98.806 151.384) (xy 151.638 151.384)
       )
     )
   )
