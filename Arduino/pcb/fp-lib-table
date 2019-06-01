@@ -5,4 +5,5 @@
   (lib (name logo)(type KiCad)(uri /home/coon/c-base/FloppyOrgel/Arduino/pcb/footprints/logo.pretty)(options "")(descr ""))
   (lib (name ibm_idc_floppy_connector)(type KiCad)(uri /home/coon/c-base/FloppyOrgel/Arduino/pcb/footprints/ibm_pc_floppy_idc.pretty)(options "")(descr ""))
   (lib (name rgb_led)(type KiCad)(uri /home/coon/c-base/FloppyOrgel/Arduino/pcb/footprints/rbg_led.pretty)(options "")(descr ""))
+  (lib (name w_switch)(type KiCad)(uri ${KIPRJMOD}/footprints/w_switch.pretty/)(options "")(descr ""))
 )

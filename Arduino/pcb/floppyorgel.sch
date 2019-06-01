@@ -59,7 +59,7 @@ U 1 1 5D19C0BF
 P 5700 2425
 F 0 "J1" H 5672 2357 50  0000 R CNN
 F 1 "VCC_Power_Select" H 5672 2448 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5700 2425 50  0001 C CNN
+F 2 "w_switch:switch_mmp122-r" H 5700 2425 50  0001 C CNN
 F 3 "~" H 5700 2425 50  0001 C CNN
 	1    5700 2425
 	-1   0    0    1   

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/coon/c-base/FloppyOrgel/Arduino/pcb/floppyorgel.sch)
-    (date "Thu 23 May 2019 10:18:39 PM CEST")
+    (date "Sat 01 Jun 2019 09:06:53 PM CEST")
     (tool "Eeschema 5.1.2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -72,7 +72,7 @@
   (components
     (comp (ref J1)
       (value VCC_Power_Select)
-      (footprint Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical)
+      (footprint w_switch:switch_mmp122-r)
       (datasheet ~)
       (libsource (lib vcc_power_select) (part VCC_Power_Select) (description "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
