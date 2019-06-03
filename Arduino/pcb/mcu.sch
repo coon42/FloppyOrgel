@@ -721,8 +721,6 @@ Text HLabel 8875 4875 0    50   Input ~ 0
 MOSI
 Text HLabel 8875 5075 0    50   Input ~ 0
 SCK
-Text Label 6500 3825 1    50   ~ 0
-RESET
 Wire Wire Line
 	6500 3825 6500 3925
 Connection ~ 6500 3925
@@ -786,4 +784,6 @@ Wire Wire Line
 	10300 3400 10200 3400
 Wire Wire Line
 	10300 3625 10200 3625
+Text Label 6500 3825 1    50   ~ 0
+RESET
 $EndSCHEMATC
