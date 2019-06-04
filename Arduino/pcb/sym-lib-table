@@ -7,4 +7,5 @@
   (lib (name ibm_pc_floppy_idc)(type Legacy)(uri ${KIPRJMOD}/footprints/ibm_pc_floppy_idc.lib)(options "")(descr ""))
   (lib (name vcc_power_select)(type Legacy)(uri ${KIPRJMOD}/footprints/vcc_power_select.lib)(options "")(descr ""))
   (lib (name logo)(type Legacy)(uri ${KIPRJMOD}/logo.lib)(options "")(descr ""))
+  (lib (name rgb_led)(type Legacy)(uri ${KIPRJMOD}/footprints/rgb_led.lib)(options "")(descr ""))
 )

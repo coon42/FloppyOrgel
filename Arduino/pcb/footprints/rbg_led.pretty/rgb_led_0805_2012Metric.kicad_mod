@@ -1,4 +1,4 @@
-(module LED_SMD:LED_0805_2012Metric (layer F.Cu) (tedit 5CE6FCC0)
+(module rgb_led_0805_2012Metric (layer F.Cu) (tedit 5CF678AA)
   (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
   (tags diode)
   (attr smd)
@@ -24,9 +24,9 @@
     (effects (font (size 0.5 0.5) (thickness 0.08)))
   )
   (pad 1 smd rect (at -1.016 -0.4064) (size 1 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 1 smd rect (at -1.016 0.4064) (size 1 0.5) (layers F.Cu F.Paste F.Mask))
+  (pad 3 smd rect (at -1.016 0.4064) (size 1 0.5) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 1.0922 -0.4064) (size 1 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 1.0922 0.4064) (size 1 0.5) (layers F.Cu F.Paste F.Mask))
+  (pad 4 smd rect (at 1.0922 0.4064) (size 1 0.5) (layers F.Cu F.Paste F.Mask))
   (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0805_2012Metric.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
