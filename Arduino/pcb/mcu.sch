@@ -403,7 +403,7 @@ F 3 "" H 10050 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10050 2300 10050 2400
-Text Notes 9675 1725 0    50   ~ 0
+Text Notes 8600 2550 0    50   ~ 0
 Bypass
 Wire Wire Line
 	8050 2500 8050 2600
