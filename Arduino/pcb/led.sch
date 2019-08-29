@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:floppyorgel-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -244,8 +244,6 @@ $EndComp
 Wire Wire Line
 	7500 3225 7500 2125
 Wire Wire Line
-	7775 1925 7775 3700
-Wire Wire Line
 	6175 2950 6300 2950
 $Comp
 L Device:R R14
@@ -280,7 +278,6 @@ F 3 "~" H 6500 4250 50  0001 C CNN
 	1    6500 4250
 	1    0    0    -1  
 $EndComp
-Connection ~ 6300 2950
 $Comp
 L power:GND #PWR042
 U 1 1 5CF83BE3
@@ -324,19 +321,11 @@ Wire Wire Line
 Wire Wire Line
 	6750 3425 7200 3425
 Wire Wire Line
-	6300 2950 6950 2950
-Wire Wire Line
-	7250 2750 7250 2325
-Wire Wire Line
 	5975 2125 6200 2125
 Wire Wire Line
 	6600 1925 6775 1925
 Wire Wire Line
-	7075 1925 7775 1925
-Wire Wire Line
 	7075 2125 7500 2125
-Wire Wire Line
-	7075 2325 7250 2325
 Wire Wire Line
 	6600 2125 6775 2125
 Wire Wire Line
@@ -6170,4 +6159,15 @@ A9 FF 33 66 CC 60 8C AD 5B B7 8E 8A 8D 18 31 62 CA 94 29 2F BD F4 92 DC 77 D4 A8
 44 AE 42 60 82 
 EndData
 $EndBitmap
+Connection ~ 6300 2950
+Wire Wire Line
+	6300 2950 6950 2950
+Wire Wire Line
+	7075 2325 7775 2325
+Wire Wire Line
+	7775 2325 7775 3700
+Wire Wire Line
+	7075 1925 7250 1925
+Wire Wire Line
+	7250 1925 7250 2750
 $EndSCHEMATC
