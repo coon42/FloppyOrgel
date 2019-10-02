@@ -251,17 +251,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 4025 8000 4025
 $Comp
-L Device:C C3
-U 1 1 5CCED101
-P 6825 4200
-F 0 "C3" H 7025 4250 50  0000 L CNN
-F 1 "100nF" H 6975 4150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6863 4050 50  0001 C CNN
-F 3 "~" H 6825 4200 50  0001 C CNN
-	1    6825 4200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R10
 U 1 1 5CCED110
 P 8000 4325
@@ -277,9 +266,6 @@ Wire Wire Line
 Connection ~ 8000 4025
 Wire Wire Line
 	8000 4525 8000 4475
-Wire Wire Line
-	7400 4850 6825 4850
-Connection ~ 6825 3925
 Text HLabel 7225 5150 0    50   Output ~ 0
 5V_ISP
 $Comp
@@ -309,63 +295,13 @@ Connection ~ 3625 4775
 Wire Wire Line
 	5825 3925 6500 3925
 Wire Wire Line
-	6825 3925 7250 3925
-Wire Wire Line
 	6700 3825 6700 3925
 Connection ~ 6700 3925
-Wire Wire Line
-	6700 3925 6825 3925
 Connection ~ 7375 3275
-Wire Wire Line
-	6825 3925 6825 4050
-Text HLabel 6325 5050 0    50   Input ~ 0
-RX
-Text HLabel 6325 4950 0    50   Output ~ 0
+Text HLabel 5950 5100 0    50   Output ~ 0
 TX
 Wire Wire Line
-	6825 4350 6825 4850
-Wire Wire Line
-	5825 4175 6425 4175
-Wire Wire Line
-	6525 4075 5825 4075
-Wire Wire Line
-	7400 5050 6625 5050
-Wire Wire Line
-	6625 5050 6625 4450
-Wire Wire Line
-	6675 4350 6675 4950
-Wire Wire Line
-	7400 4950 6675 4950
-Wire Wire Line
-	6325 4950 6425 4950
-Wire Wire Line
-	6325 5050 6525 5050
-$Comp
-L Device:R R7
-U 1 1 5CFC6CB8
-P 6425 4700
-F 0 "R7" H 6275 4850 50  0000 L CNN
-F 1 "100R" V 6425 4600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6355 4700 50  0001 C CNN
-F 3 "~" H 6425 4700 50  0001 C CNN
-	1    6425 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6425 4950 6425 4850
-$Comp
-L Device:R R8
-U 1 1 5CFCA336
-P 6525 4700
-F 0 "R8" H 6425 4850 50  0000 L CNN
-F 1 "100R" V 6525 4600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6455 4700 50  0001 C CNN
-F 3 "~" H 6525 4700 50  0001 C CNN
-	1    6525 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6525 5050 6525 4850
+	5825 4175 6050 4175
 $Comp
 L Device:C C?
 U 1 1 5D1392AB
@@ -491,20 +427,6 @@ Wire Wire Line
 	8900 2675 9200 2675
 Wire Wire Line
 	9200 2625 9200 2675
-Wire Wire Line
-	6425 4175 6425 4350
-Wire Wire Line
-	6525 4075 6525 4450
-Wire Wire Line
-	6675 4350 6425 4350
-Connection ~ 6425 4350
-Wire Wire Line
-	6425 4350 6425 4550
-Wire Wire Line
-	6625 4450 6525 4450
-Connection ~ 6525 4450
-Wire Wire Line
-	6525 4450 6525 4550
 Wire Wire Line
 	8250 2900 8150 2900
 Wire Wire Line
@@ -4567,4 +4489,142 @@ F 3 "" H 8525 2875 50  0001 C CNN
 	1    8525 2875
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xGxx:74AHCT1G32 U5
+U 1 1 5D9A3C33
+P 6425 5100
+F 0 "U5" H 6375 5250 50  0000 R CNN
+F 1 "74AHCT1G32" H 6675 4925 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6425 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 6425 5100 50  0001 C CNN
+	1    6425 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 5D9DCC48
+P 6425 5300
+F 0 "#PWR047" H 6425 5050 50  0001 C CNN
+F 1 "GND" H 6430 5127 50  0000 C CNN
+F 2 "" H 6425 5300 50  0001 C CNN
+F 3 "" H 6425 5300 50  0001 C CNN
+	1    6425 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR046
+U 1 1 5D9E0DFB
+P 6425 4900
+F 0 "#PWR046" H 6425 4750 50  0001 C CNN
+F 1 "VCC" H 6442 5073 50  0000 C CNN
+F 2 "" H 6425 4900 50  0001 C CNN
+F 3 "" H 6425 4900 50  0001 C CNN
+	1    6425 4900
+	-1   0    0    -1  
+$EndComp
+Text HLabel 5950 5225 0    50   Input ~ 0
+RX
+Connection ~ 6050 4175
+Wire Wire Line
+	5950 5100 6050 5100
+Wire Wire Line
+	6050 4175 6050 5100
+Wire Wire Line
+	5825 4075 6125 4075
+Wire Wire Line
+	6125 4075 6125 5100
+Wire Wire Line
+	6125 5100 6175 5100
+$Comp
+L Device:R R7
+U 1 1 5D96B9DF
+P 6725 4750
+F 0 "R7" V 6650 4875 50  0000 L CNN
+F 1 "4k7" V 6725 4675 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6655 4750 50  0001 C CNN
+F 3 "~" H 6725 4750 50  0001 C CNN
+	1    6725 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5D973982
+P 6825 4750
+F 0 "R8" V 6775 4875 50  0000 L CNN
+F 1 "4k7" V 6825 4675 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6755 4750 50  0001 C CNN
+F 3 "~" H 6825 4750 50  0001 C CNN
+	1    6825 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 5000 6425 4900
+Wire Wire Line
+	6425 5200 6425 5300
+Wire Wire Line
+	6725 5575 6050 5575
+Wire Wire Line
+	6050 5575 6050 5225
+Wire Wire Line
+	6050 5225 5950 5225
+Wire Wire Line
+	6725 5150 6725 5575
+$Comp
+L Device:C C3
+U 1 1 5CCED101
+P 7150 4250
+F 0 "C3" H 7350 4300 50  0000 L CNN
+F 1 "100nF" H 7300 4200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7188 4100 50  0001 C CNN
+F 3 "~" H 7150 4250 50  0001 C CNN
+	1    7150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4175 7000 4175
+Wire Wire Line
+	7150 4100 7150 3925
+Connection ~ 7150 3925
+Wire Wire Line
+	7150 3925 7250 3925
+Wire Wire Line
+	6700 3925 7150 3925
+$Comp
+L power:VCC #PWR048
+U 1 1 5DA39DEA
+P 6825 4450
+F 0 "#PWR048" H 6825 4300 50  0001 C CNN
+F 1 "VCC" H 6842 4623 50  0000 C CNN
+F 2 "" H 6825 4450 50  0001 C CNN
+F 3 "" H 6825 4450 50  0001 C CNN
+	1    6825 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 4600 6825 4500
+Wire Wire Line
+	6725 4600 6725 4500
+Wire Wire Line
+	6725 4500 6825 4500
+Connection ~ 6825 4500
+Wire Wire Line
+	6825 4500 6825 4450
+Wire Wire Line
+	7000 4950 7400 4950
+Wire Wire Line
+	7000 4175 7000 4950
+Wire Wire Line
+	7150 4850 7400 4850
+Wire Wire Line
+	7150 4400 7150 4850
+Connection ~ 6725 5050
+Wire Wire Line
+	6725 5050 7400 5050
+Wire Wire Line
+	6725 5150 6825 5150
+Connection ~ 6725 5150
+Wire Wire Line
+	6725 4900 6725 5050
+Wire Wire Line
+	6825 4900 6825 5150
 $EndSCHEMATC
