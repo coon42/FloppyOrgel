@@ -76,9 +76,9 @@ $EndComp
 Wire Wire Line
 	5900 1500 5900 1600
 Text HLabel 5400 1300 2    50   Output ~ 0
-TX
+BUS_TX
 Text HLabel 5400 1600 2    50   Input ~ 0
-RX
+BUS_RX
 Text HLabel 10700 1300 0    50   Output ~ 0
 BUS_POWER
 $Comp
