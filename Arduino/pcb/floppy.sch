@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -14,483 +14,216 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 6950 2925
-NoConn ~ 6950 3025
-NoConn ~ 6950 3325
-NoConn ~ 6950 3625
-NoConn ~ 6950 3725
-NoConn ~ 6950 3925
-NoConn ~ 6950 4025
-NoConn ~ 6950 4125
-NoConn ~ 6950 4225
-NoConn ~ 6950 2625
-NoConn ~ 6950 3225
+NoConn ~ 6200 3275
+NoConn ~ 6200 3375
+NoConn ~ 6200 3675
+NoConn ~ 6200 3975
+NoConn ~ 6200 4075
+NoConn ~ 6200 4275
+NoConn ~ 6200 4375
+NoConn ~ 6200 4475
+NoConn ~ 6200 4575
+NoConn ~ 6200 2975
+NoConn ~ 6200 3575
 $Comp
 L ibm_pc_floppy_idc:IBM_PC_Floppy_IDC J?
 U 1 1 5CE26438
-P 7750 3425
+P 7000 3775
 AR Path="/5CE26438" Ref="J?"  Part="1" 
 AR Path="/5CD0EE48/5CE26438" Ref="J8"  Part="1" 
-F 0 "J8" H 7950 4475 50  0000 C CNN
-F 1 "IBM_PC_Floppy_IDC" H 8000 4375 50  0000 C CNN
-F 2 "ibm_idc_floppy_connector:ibm_pc_floppy_idc" H 7750 3425 50  0001 C CNN
-F 3 "" H 7750 3425 50  0001 C CNN
-	1    7750 3425
+F 0 "J8" H 7200 4825 50  0000 C CNN
+F 1 "IBM_PC_Floppy_IDC" H 7250 4725 50  0000 C CNN
+F 2 "ibm_idc_floppy_connector:ibm_pc_floppy_idc" H 7000 3775 50  0001 C CNN
+F 3 "" H 7000 3775 50  0001 C CNN
+	1    7000 3775
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 2625 7950 2725
-Connection ~ 7950 2725
+	7200 2975 7200 3075
+Connection ~ 7200 3075
 Wire Wire Line
-	7950 2725 7950 2825
-Connection ~ 7950 2825
+	7200 3075 7200 3175
+Connection ~ 7200 3175
 Wire Wire Line
-	7950 2825 7950 2925
-Connection ~ 7950 2925
+	7200 3175 7200 3275
+Connection ~ 7200 3275
 Wire Wire Line
-	7950 2925 7950 3025
-Connection ~ 7950 3025
+	7200 3275 7200 3375
+Connection ~ 7200 3375
 Wire Wire Line
-	7950 3025 7950 3125
-Connection ~ 7950 3125
+	7200 3375 7200 3475
+Connection ~ 7200 3475
 Wire Wire Line
-	7950 3125 7950 3225
-Connection ~ 7950 3225
+	7200 3475 7200 3575
+Connection ~ 7200 3575
 Wire Wire Line
-	7950 3225 7950 3325
-Connection ~ 7950 3325
+	7200 3575 7200 3675
+Connection ~ 7200 3675
 Wire Wire Line
-	7950 3325 7950 3425
-Connection ~ 7950 3425
+	7200 3675 7200 3775
+Connection ~ 7200 3775
 Wire Wire Line
-	7950 3425 7950 3525
-Connection ~ 7950 3525
+	7200 3775 7200 3875
+Connection ~ 7200 3875
 Wire Wire Line
-	7950 3525 7950 3625
-Connection ~ 7950 3625
+	7200 3875 7200 3975
+Connection ~ 7200 3975
 Wire Wire Line
-	7950 3625 7950 3725
-Connection ~ 7950 3725
+	7200 3975 7200 4075
+Connection ~ 7200 4075
 Wire Wire Line
-	7950 3725 7950 3825
-Connection ~ 7950 3825
+	7200 4075 7200 4175
+Connection ~ 7200 4175
 Wire Wire Line
-	7950 3825 7950 3925
-Connection ~ 7950 3925
+	7200 4175 7200 4275
+Connection ~ 7200 4275
 Wire Wire Line
-	7950 3925 7950 4025
-Connection ~ 7950 4025
+	7200 4275 7200 4375
+Connection ~ 7200 4375
 Wire Wire Line
-	7950 4025 7950 4125
+	7200 4375 7200 4475
 Wire Wire Line
-	7950 4125 7950 4225
-Connection ~ 7950 4125
-Connection ~ 7950 4225
+	7200 4475 7200 4575
+Connection ~ 7200 4475
+Connection ~ 7200 4575
 Wire Wire Line
-	7950 4225 7950 4425
+	7200 4575 7200 4775
 $Comp
 L power:GND #PWR?
 U 1 1 5CE2645F
-P 7950 4425
+P 7200 4775
 AR Path="/5CE2645F" Ref="#PWR?"  Part="1" 
 AR Path="/5CD0EE48/5CE2645F" Ref="#PWR018"  Part="1" 
-F 0 "#PWR018" H 7950 4175 50  0001 C CNN
-F 1 "GND" H 7955 4252 50  0000 C CNN
-F 2 "" H 7950 4425 50  0001 C CNN
-F 3 "" H 7950 4425 50  0001 C CNN
-	1    7950 4425
+F 0 "#PWR018" H 7200 4525 50  0001 C CNN
+F 1 "GND" H 7205 4602 50  0000 C CNN
+F 2 "" H 7200 4775 50  0001 C CNN
+F 3 "" H 7200 4775 50  0001 C CNN
+	1    7200 4775
 	-1   0    0    -1  
 $EndComp
-Text HLabel 6850 3125 0    50   Input ~ 0
+Text HLabel 6100 3475 0    50   Input ~ 0
 DRIVE_SELECT
-Text HLabel 6850 3425 0    50   Input ~ 0
+Text HLabel 6100 3775 0    50   Input ~ 0
 DIRECTION
-Text HLabel 6850 3825 0    50   Output ~ 0
+Text HLabel 6100 4175 0    50   Output ~ 0
 TRK00
-Text HLabel 6850 3525 0    50   Input ~ 0
+Text HLabel 6100 3875 0    50   Input ~ 0
 STEP
 Wire Wire Line
-	6850 3125 6950 3125
+	6100 3475 6200 3475
 Wire Wire Line
-	6850 3425 6950 3425
+	6100 3775 6200 3775
 Wire Wire Line
-	6850 3525 6950 3525
+	6100 3875 6200 3875
 Wire Wire Line
-	6850 3825 6950 3825
+	6100 4175 6200 4175
 $Comp
 L floppy-power:Floppy-Power J?
 U 1 1 5CEBDDC6
-P 7625 1675
+P 6875 2025
 AR Path="/5CEBDDC6" Ref="J?"  Part="1" 
 AR Path="/5CD0EE48/5CEBDDC6" Ref="J7"  Part="1" 
-F 0 "J7" H 7675 2025 50  0000 L CNN
-F 1 "Floppy-Power" H 7475 1925 50  0000 L CNN
-F 2 "floppy_power:Floppy_Power_1x04_Pitch2.54mm" H 7625 1675 50  0001 C CNN
-F 3 "" H 7625 1675 50  0001 C CNN
-	1    7625 1675
+F 0 "J7" H 6925 2375 50  0000 L CNN
+F 1 "Floppy-Power" H 6725 2275 50  0000 L CNN
+F 2 "floppy_power:Floppy_Power_1x04_Pitch2.54mm" H 6875 2025 50  0001 C CNN
+F 3 "" H 6875 2025 50  0001 C CNN
+	1    6875 2025
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CEBDDD4
-P 7250 1675
+P 6500 2025
 AR Path="/5CEBDDD4" Ref="#PWR?"  Part="1" 
 AR Path="/5CD0EE48/5CEBDDD4" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 7250 1425 50  0001 C CNN
-F 1 "GND" H 7255 1502 50  0000 C CNN
-F 2 "" H 7250 1675 50  0001 C CNN
-F 3 "" H 7250 1675 50  0001 C CNN
-	1    7250 1675
+F 0 "#PWR010" H 6500 1775 50  0001 C CNN
+F 1 "GND" H 6505 1852 50  0000 C CNN
+F 2 "" H 6500 2025 50  0001 C CNN
+F 3 "" H 6500 2025 50  0001 C CNN
+	1    6500 2025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7425 1775 7425 1675
-Connection ~ 7425 1675
+	6675 2125 6675 2025
+Connection ~ 6675 2025
 Wire Wire Line
-	7250 1675 7425 1675
+	6500 2025 6675 2025
 Wire Wire Line
-	7425 2025 7425 1875
+	6675 2375 6675 2225
 Wire Wire Line
-	7250 1575 7425 1575
-Text HLabel 7250 1575 0    50   Input ~ 0
+	6500 1925 6675 1925
+Text HLabel 6500 1925 0    50   Input ~ 0
 5V_BUS
-Text HLabel 7250 2025 0    50   Input ~ 0
+Text HLabel 6500 2375 0    50   Input ~ 0
 12V_BUS
 Wire Wire Line
-	7250 2025 7425 2025
+	6500 2375 6675 2375
 $Comp
 L floppyorgel-rescue:SW_DIP_x06-switches SW?
 U 1 1 5D1F809D
-P 2275 3475
+P 3775 3625
 AR Path="/5D1F809D" Ref="SW?"  Part="1" 
 AR Path="/5CD1E0A5/5D1F809D" Ref="SW?"  Part="1" 
 AR Path="/5CD0EE48/5D1F809D" Ref="SW1"  Part="1" 
-F 0 "SW1" H 2275 3925 50  0000 C CNN
-F 1 "Bus Address Select" H 2275 3125 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx06_Slide_9.78x17.42mm_W7.62mm_P2.54mm" H 2275 3475 50  0001 C CNN
-F 3 "" H 2275 3475 50  0001 C CNN
-	1    2275 3475
+F 0 "SW1" H 3775 4075 50  0000 C CNN
+F 1 "Bus Address Select" H 3775 3275 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx06_Slide_9.78x17.42mm_W7.62mm_P2.54mm" H 3775 3625 50  0001 C CNN
+F 3 "" H 3775 3625 50  0001 C CNN
+	1    3775 3625
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3475 3825 3475 3725
+Connection ~ 3475 3425
+Wire Wire Line
+	3475 3425 3475 3325
+Connection ~ 3475 3525
+Wire Wire Line
+	3475 3525 3475 3425
+Connection ~ 3475 3625
+Wire Wire Line
+	3475 3625 3475 3525
+Connection ~ 3475 3725
+Wire Wire Line
+	3475 3725 3475 3625
+Text HLabel 4375 3625 2    50   Output ~ 0
+A4
+Text HLabel 4375 3725 2    50   Output ~ 0
+A5
+Text HLabel 4375 3825 2    50   Output ~ 0
+A6
 $Comp
-L Device:R R?
-U 1 1 5D1F80A3
-P 3375 3875
-AR Path="/5D1F80A3" Ref="R?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80A3" Ref="R?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80A3" Ref="R6"  Part="1" 
-F 0 "R6" V 3425 3575 50  0000 L CNN
-F 1 "4K7" V 3375 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3305 3875 50  0001 C CNN
-F 3 "~" H 3375 3875 50  0001 C CNN
-	1    3375 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D1F80A9
-P 3275 3875
-AR Path="/5D1F80A9" Ref="R?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80A9" Ref="R?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80A9" Ref="R5"  Part="1" 
-F 0 "R5" V 3325 3575 50  0000 L CNN
-F 1 "4K7" V 3275 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3205 3875 50  0001 C CNN
-F 3 "~" H 3275 3875 50  0001 C CNN
-	1    3275 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D1F80AF
-P 3175 3875
-AR Path="/5D1F80AF" Ref="R?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80AF" Ref="R?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80AF" Ref="R4"  Part="1" 
-F 0 "R4" V 3225 3575 50  0000 L CNN
-F 1 "4K7" V 3175 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3105 3875 50  0001 C CNN
-F 3 "~" H 3175 3875 50  0001 C CNN
-	1    3175 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D1F80B5
-P 3075 3875
-AR Path="/5D1F80B5" Ref="R?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80B5" Ref="R?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80B5" Ref="R3"  Part="1" 
-F 0 "R3" V 3125 3575 50  0000 L CNN
-F 1 "4K7" V 3075 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3005 3875 50  0001 C CNN
-F 3 "~" H 3075 3875 50  0001 C CNN
-	1    3075 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D1F80BB
-P 2975 3875
-AR Path="/5D1F80BB" Ref="R?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80BB" Ref="R?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80BB" Ref="R2"  Part="1" 
-F 0 "R2" V 3025 3575 50  0000 L CNN
-F 1 "4K7" V 2975 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2905 3875 50  0001 C CNN
-F 3 "~" H 2975 3875 50  0001 C CNN
-	1    2975 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D1F80C1
-P 2875 3875
-AR Path="/5D1F80C1" Ref="R?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80C1" Ref="R?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80C1" Ref="R1"  Part="1" 
-F 0 "R1" V 2925 3575 50  0000 L CNN
-F 1 "4K7" V 2875 3800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2805 3875 50  0001 C CNN
-F 3 "~" H 2875 3875 50  0001 C CNN
-	1    2875 3875
+L power:GND #PWR0104
+U 1 1 5D9BC161
+P 3475 4075
+F 0 "#PWR0104" H 3475 3825 50  0001 C CNN
+F 1 "GND" H 3480 3902 50  0000 C CNN
+F 2 "" H 3475 4075 50  0001 C CNN
+F 3 "" H 3475 4075 50  0001 C CNN
+	1    3475 4075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2575 3175 3375 3175
+	3475 3825 3475 4075
+Connection ~ 3475 3825
+Text HLabel 4375 3525 2    50   Output ~ 0
+A3
+Text HLabel 4375 3425 2    50   Output ~ 0
+A2
+Text HLabel 4375 3325 2    50   Output ~ 0
+A1
 Wire Wire Line
-	2575 3275 3275 3275
+	4075 3525 4375 3525
 Wire Wire Line
-	2575 3375 3175 3375
+	4075 3625 4375 3625
 Wire Wire Line
-	2575 3475 3075 3475
+	4075 3725 4375 3725
 Wire Wire Line
-	2575 3575 2975 3575
+	4075 3825 4375 3825
 Wire Wire Line
-	2575 3675 2875 3675
+	4075 3325 4375 3325
 Wire Wire Line
-	3375 3725 3375 3175
-Connection ~ 3375 3175
-Wire Wire Line
-	3275 3725 3275 3275
-Connection ~ 3275 3275
-Wire Wire Line
-	3175 3725 3175 3375
-Connection ~ 3175 3375
-Wire Wire Line
-	3075 3725 3075 3475
-Connection ~ 3075 3475
-Wire Wire Line
-	2975 3725 2975 3575
-Connection ~ 2975 3575
-Wire Wire Line
-	2875 3725 2875 3675
-Connection ~ 2875 3675
-Wire Wire Line
-	1975 3675 1975 3575
-Connection ~ 1975 3175
-Wire Wire Line
-	1975 3175 1975 2975
-Connection ~ 1975 3275
-Wire Wire Line
-	1975 3275 1975 3175
-Connection ~ 1975 3375
-Wire Wire Line
-	1975 3375 1975 3275
-Connection ~ 1975 3475
-Wire Wire Line
-	1975 3475 1975 3375
-Connection ~ 1975 3575
-Wire Wire Line
-	1975 3575 1975 3475
-$Comp
-L power:VCC #PWR?
-U 1 1 5D1F80E4
-P 1975 2975
-AR Path="/5D1F80E4" Ref="#PWR?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80E4" Ref="#PWR?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80E4" Ref="#PWR011"  Part="1" 
-F 0 "#PWR011" H 1975 2825 50  0001 C CNN
-F 1 "VCC" H 1992 3148 50  0000 C CNN
-F 2 "" H 1975 2975 50  0001 C CNN
-F 3 "" H 1975 2975 50  0001 C CNN
-	1    1975 2975
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D1F80EA
-P 2875 4375
-AR Path="/5D1F80EA" Ref="#PWR?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80EA" Ref="#PWR?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80EA" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 2875 4125 50  0001 C CNN
-F 1 "GND" H 2880 4202 50  0000 C CNN
-F 2 "" H 2875 4375 50  0001 C CNN
-F 3 "" H 2875 4375 50  0001 C CNN
-	1    2875 4375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3375 4025 3275 4025
-Connection ~ 2975 4025
-Wire Wire Line
-	2975 4025 2875 4025
-Connection ~ 3075 4025
-Wire Wire Line
-	3075 4025 2975 4025
-Connection ~ 3175 4025
-Wire Wire Line
-	3175 4025 3075 4025
-Connection ~ 3275 4025
-Wire Wire Line
-	3275 4025 3175 4025
-Wire Wire Line
-	2875 4025 2875 4375
-Connection ~ 2875 4025
-$Comp
-L power:VCC #PWR?
-U 1 1 5D1F80FB
-P 4575 2725
-AR Path="/5D1F80FB" Ref="#PWR?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F80FB" Ref="#PWR?"  Part="1" 
-AR Path="/5CD0EE48/5D1F80FB" Ref="#PWR017"  Part="1" 
-F 0 "#PWR017" H 4575 2575 50  0001 C CNN
-F 1 "VCC" H 4592 2898 50  0000 C CNN
-F 2 "" H 4575 2725 50  0001 C CNN
-F 3 "" H 4575 2725 50  0001 C CNN
-	1    4575 2725
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D1F8101
-P 3125 2850
-AR Path="/5D1F8101" Ref="#PWR?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F8101" Ref="#PWR?"  Part="1" 
-AR Path="/5CD0EE48/5D1F8101" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 3125 2600 50  0001 C CNN
-F 1 "GND" H 3130 2677 50  0000 C CNN
-F 2 "" H 3125 2850 50  0001 C CNN
-F 3 "" H 3125 2850 50  0001 C CNN
-	1    3125 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx_IEEE:4021 U?
-U 1 1 5D1F8107
-P 4425 3125
-AR Path="/5D1F8107" Ref="U?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F8107" Ref="U?"  Part="1" 
-AR Path="/5CD0EE48/5D1F8107" Ref="U1"  Part="1" 
-F 0 "U1" H 4275 3650 50  0000 C CNN
-F 1 "4021" H 4275 3550 50  0000 C CNN
-F 2 "Package_SO:SSOP-16_5.3x6.2mm_P0.65mm" H 4425 3125 50  0001 C CNN
-F 3 "" H 4425 3125 50  0001 C CNN
-	1    4425 3125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3375 3175 3875 3175
-Wire Wire Line
-	3275 3275 3875 3275
-Wire Wire Line
-	3175 3375 3875 3375
-Wire Wire Line
-	3075 3475 3875 3475
-Wire Wire Line
-	2975 3575 3875 3575
-Wire Wire Line
-	2875 3675 3875 3675
-Wire Wire Line
-	4475 2525 4475 2775
-Wire Wire Line
-	3875 3775 3875 3875
-Wire Wire Line
-	3875 3875 3875 3975
-Connection ~ 3875 3875
-$Comp
-L power:GND #PWR?
-U 1 1 5D1F8117
-P 3875 3975
-AR Path="/5D1F8117" Ref="#PWR?"  Part="1" 
-AR Path="/5CD1E0A5/5D1F8117" Ref="#PWR?"  Part="1" 
-AR Path="/5CD0EE48/5D1F8117" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 3875 3725 50  0001 C CNN
-F 1 "GND" H 3880 3802 50  0000 C CNN
-F 2 "" H 3875 3975 50  0001 C CNN
-F 3 "" H 3875 3975 50  0001 C CNN
-	1    3875 3975
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4975 3675
-NoConn ~ 4975 3775
-Wire Wire Line
-	3125 2850 3125 2525
-Wire Wire Line
-	3125 2525 3275 2525
-Wire Wire Line
-	3275 2525 3275 3075
-Connection ~ 3275 2525
-Wire Wire Line
-	3275 3075 3875 3075
-Wire Wire Line
-	3275 2525 4475 2525
-Wire Wire Line
-	4575 2775 4575 2725
-Text HLabel 3875 2825 0    50   Input ~ 0
-LATCH_ADDR
-Text HLabel 3875 2925 0    50   Input ~ 0
-SCK
-Text HLabel 4975 3875 2    50   Output ~ 0
-MISO
-$Comp
-L Device:C C?
-U 1 1 5CD16AEF
-P 5600 3200
-AR Path="/5CD16AEF" Ref="C?"  Part="1" 
-AR Path="/5CCFEC3E/5CD16AEF" Ref="C?"  Part="1" 
-AR Path="/5CD1E0A5/5CD16AEF" Ref="C?"  Part="1" 
-AR Path="/5CD0EE48/5CD16AEF" Ref="C2"  Part="1" 
-F 0 "C2" H 5375 3400 50  0000 L CNN
-F 1 "100nF" H 5325 3300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5638 3050 50  0001 C CNN
-F 3 "~" H 5600 3200 50  0001 C CNN
-	1    5600 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5CD16AF5
-P 5600 2925
-AR Path="/5CCFEC3E/5CD16AF5" Ref="#PWR?"  Part="1" 
-AR Path="/5CD1E0A5/5CD16AF5" Ref="#PWR?"  Part="1" 
-AR Path="/5CD0EE48/5CD16AF5" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 5600 2775 50  0001 C CNN
-F 1 "VCC" H 5617 3098 50  0000 C CNN
-F 2 "" H 5600 2925 50  0001 C CNN
-F 3 "" H 5600 2925 50  0001 C CNN
-	1    5600 2925
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CD16AFB
-P 5600 3450
-AR Path="/5CCFEC3E/5CD16AFB" Ref="#PWR?"  Part="1" 
-AR Path="/5CD1E0A5/5CD16AFB" Ref="#PWR?"  Part="1" 
-AR Path="/5CD0EE48/5CD16AFB" Ref="#PWR015"  Part="1" 
-F 0 "#PWR015" H 5600 3200 50  0001 C CNN
-F 1 "GND" H 5605 3277 50  0000 C CNN
-F 2 "" H 5600 3450 50  0001 C CNN
-F 3 "" H 5600 3450 50  0001 C CNN
-	1    5600 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 2925 5600 3050
-Wire Wire Line
-	5600 3350 5600 3450
-Text Notes 5225 2875 0    50   ~ 0
-Bypass
+	4075 3425 4375 3425
+Text Notes 2925 3075 0    50   ~ 0
+MCU uses internal pullup resistors on A1 - A6 pins
 $EndSCHEMATC

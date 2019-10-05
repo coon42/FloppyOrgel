@@ -14,13 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 5825 3625
-NoConn ~ 5825 4775
-NoConn ~ 5825 4675
-NoConn ~ 5825 4575
-NoConn ~ 5825 4475
-NoConn ~ 5825 4375
-NoConn ~ 5825 4275
 NoConn ~ 3925 3925
 NoConn ~ 3925 3825
 Wire Wire Line
@@ -37,8 +30,6 @@ Wire Wire Line
 	6250 3275 6625 3275
 Wire Wire Line
 	6250 3175 6250 3275
-Wire Wire Line
-	5825 3425 5875 3425
 Wire Wire Line
 	5825 3325 5875 3325
 Wire Wire Line
@@ -126,19 +117,6 @@ F 3 "" H 6625 3125 50  0001 C CNN
 	1    6625 3125
 	0    -1   -1   0   
 $EndComp
-$Comp
-L floppyorgel-rescue:ATMEGA328P-AU-atmel U?
-U 1 1 5CC6668C
-P 4825 3575
-AR Path="/5CC6668C" Ref="U?"  Part="1" 
-AR Path="/5CCFEC3E/5CC6668C" Ref="U2"  Part="1" 
-F 0 "U2" H 4075 4825 50  0000 L BNN
-F 1 "ATMEGA328P-AU" H 5225 2175 50  0000 L BNN
-F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 4825 3575 50  0001 C CIN
-F 3 "" H 4825 3575 50  0001 C CNN
-	1    4825 3575
-	1    0    0    -1  
-$EndComp
 Text HLabel 5875 2475 2    50   Output ~ 0
 DRIVE_SELECT
 Text HLabel 5875 2575 2    50   Output ~ 0
@@ -151,10 +129,6 @@ Text HLabel 5875 2975 2    50   Output ~ 0
 SCK
 Text HLabel 5875 3325 2    50   Input ~ 0
 TRK00
-Text HLabel 5875 3425 2    50   Output ~ 0
-LATCH_ADDR
-Text HLabel 5875 3525 2    50   Output ~ 0
-LATCH_LED
 $Comp
 L ftdi:FTDI J9
 U 1 1 5CCD774C
@@ -327,28 +301,9 @@ Wire Wire Line
 Text Notes 10350 2125 0    50   ~ 0
 Bypass
 Wire Wire Line
-	7875 2500 7875 2600
-Wire Wire Line
 	8075 2500 8075 2600
 Wire Wire Line
 	7975 2500 7975 2600
-Wire Wire Line
-	7875 2900 7875 2950
-$Comp
-L power:GND #PWR?
-U 1 1 5D158700
-P 7875 2950
-AR Path="/5D158700" Ref="#PWR?"  Part="1" 
-AR Path="/5CCFEC3E/5D158700" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 7875 2700 50  0001 C CNN
-F 1 "GND" H 7880 2777 50  0000 C CNN
-F 2 "" H 7875 2950 50  0001 C CNN
-F 3 "" H 7875 2950 50  0001 C CNN
-	1    7875 2950
-	1    0    0    -1  
-$EndComp
-Text HLabel 7875 2500 1    50   Input ~ 0
-LATCH_ADDR
 Text HLabel 7975 2500 1    50   Input ~ 0
 MISO
 Text HLabel 8075 2500 1    50   Input ~ 0
@@ -379,19 +334,6 @@ F 3 "~" H 7975 2750 50  0001 C CNN
 	1    7975 2750
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5D1586DC
-P 7875 2750
-AR Path="/5D1586DC" Ref="R?"  Part="1" 
-AR Path="/5CCFEC3E/5D1586DC" Ref="R11"  Part="1" 
-F 0 "R11" V 7900 2575 50  0000 C CNN
-F 1 "4K7" V 7875 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7805 2750 50  0001 C CNN
-F 3 "~" H 7875 2750 50  0001 C CNN
-	1    7875 2750
-	-1   0    0    1   
-$EndComp
 NoConn ~ 3925 3075
 $Comp
 L power:PWR_FLAG #FLG02
@@ -414,10 +356,6 @@ Wire Wire Line
 	9475 2075 9475 2125
 Wire Wire Line
 	8075 2900 7975 2900
-Wire Wire Line
-	7975 2900 7875 2900
-Connection ~ 7975 2900
-Connection ~ 7875 2900
 $Comp
 L Memory_EEPROM:24LC64 U3
 U 1 1 5CCCB27C
@@ -4627,4 +4565,59 @@ F 3 "" H 7375 3275 50  0001 C CNN
 	1    7375 3275
 	1    0    0    -1  
 $EndComp
+Text HLabel 5875 4375 2    50   Input ~ 0
+A2
+Text HLabel 5875 4475 2    50   Input ~ 0
+A3
+Text HLabel 5875 4575 2    50   Input ~ 0
+A4
+Text HLabel 5875 4675 2    50   Input ~ 0
+A5
+Text HLabel 5875 4775 2    50   Input ~ 0
+A6
+$Comp
+L floppyorgel-rescue:ATMEGA328P-AU-atmel U?
+U 1 1 5CC6668C
+P 4825 3575
+AR Path="/5CC6668C" Ref="U?"  Part="1" 
+AR Path="/5CCFEC3E/5CC6668C" Ref="U2"  Part="1" 
+F 0 "U2" H 4075 4825 50  0000 L BNN
+F 1 "ATMEGA328P-AU" H 5225 2175 50  0000 L BNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 4825 3575 50  0001 C CIN
+F 3 "" H 4825 3575 50  0001 C CNN
+	1    4825 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 4375 5875 4375
+Wire Wire Line
+	5825 4475 5875 4475
+Wire Wire Line
+	5825 4575 5875 4575
+Wire Wire Line
+	5825 4675 5875 4675
+Wire Wire Line
+	5825 4775 5875 4775
+Wire Wire Line
+	5825 4275 5875 4275
+Text HLabel 5875 4275 2    50   Input ~ 0
+A1
+Text HLabel 5875 3525 2    50   Output ~ 0
+LATCH_LED
+$Comp
+L power:GND #PWR?
+U 1 1 5D158700
+P 8075 3000
+AR Path="/5D158700" Ref="#PWR?"  Part="1" 
+AR Path="/5CCFEC3E/5D158700" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 8075 2750 50  0001 C CNN
+F 1 "GND" H 8080 2827 50  0000 C CNN
+F 2 "" H 8075 3000 50  0001 C CNN
+F 3 "" H 8075 3000 50  0001 C CNN
+	1    8075 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8075 2900 8075 3000
+Connection ~ 8075 2900
 $EndSCHEMATC
