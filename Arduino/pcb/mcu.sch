@@ -17,8 +17,6 @@ $EndDescr
 NoConn ~ 3925 3925
 NoConn ~ 3925 3825
 Wire Wire Line
-	5825 3525 5875 3525
-Wire Wire Line
 	5825 3175 6250 3175
 Wire Wire Line
 	5825 3075 6250 3075
@@ -123,10 +121,6 @@ Text HLabel 5875 2575 2    50   Output ~ 0
 DIRECTION
 Text HLabel 5875 2675 2    50   Output ~ 0
 STEP
-Text HLabel 5875 2875 2    50   Input ~ 0
-MISO
-Text HLabel 5875 2975 2    50   Output ~ 0
-SCK
 Text HLabel 5875 3325 2    50   Input ~ 0
 TRK00
 $Comp
@@ -304,10 +298,6 @@ Wire Wire Line
 	8075 2500 8075 2600
 Wire Wire Line
 	7975 2500 7975 2600
-Text HLabel 7975 2500 1    50   Input ~ 0
-MISO
-Text HLabel 8075 2500 1    50   Input ~ 0
-SCK
 $Comp
 L Device:R R?
 U 1 1 5D1586EE
@@ -445,8 +435,6 @@ Wire Wire Line
 	9200 3675 9100 3675
 Wire Wire Line
 	9100 3675 9100 3975
-Text HLabel 5875 2775 2    50   Output ~ 0
-MOSI
 $Comp
 L Device:C C?
 U 1 1 5CD38628
@@ -556,12 +544,6 @@ Wire Wire Line
 	9125 5150 9025 5150
 Wire Wire Line
 	9125 5350 9025 5350
-Text HLabel 9025 4750 0    50   Input ~ 0
-MISO
-Text HLabel 9025 4950 0    50   Input ~ 0
-MOSI
-Text HLabel 9025 5150 0    50   Input ~ 0
-SCK
 Wire Wire Line
 	6500 3825 6500 3925
 Connection ~ 6500 3925
@@ -4602,8 +4584,6 @@ Wire Wire Line
 	5825 4275 5875 4275
 Text HLabel 5875 4275 2    50   Input ~ 0
 A1
-Text HLabel 5875 3525 2    50   Output ~ 0
-LATCH_LED
 $Comp
 L power:GND #PWR?
 U 1 1 5D158700
@@ -4620,4 +4600,32 @@ $EndComp
 Wire Wire Line
 	8075 2900 8075 3000
 Connection ~ 8075 2900
+Text HLabel 5875 3425 2    50   Output ~ 0
+LED_RED
+Text HLabel 5875 3525 2    50   Output ~ 0
+LED_GREEN
+Text HLabel 5875 3625 2    50   Output ~ 0
+LED_BLUE
+Wire Wire Line
+	5825 3425 5875 3425
+Wire Wire Line
+	5825 3525 5875 3525
+Wire Wire Line
+	5825 3625 5875 3625
+Text Label 5875 2875 0    50   ~ 0
+MISO
+Text Label 5875 2775 0    50   ~ 0
+MOSI
+Text Label 5875 2975 0    50   ~ 0
+SCK
+Text Label 9025 4750 2    50   ~ 0
+MISO
+Text Label 9025 4950 2    50   ~ 0
+MOSI
+Text Label 9025 5150 2    50   ~ 0
+SCK
+Text Label 7975 2500 1    50   ~ 0
+MISO
+Text Label 8075 2500 1    50   ~ 0
+SCK
 $EndSCHEMATC
