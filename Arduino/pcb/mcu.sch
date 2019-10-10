@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -14,8 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 3925 3925
-NoConn ~ 3925 3825
 Wire Wire Line
 	5825 3175 6250 3175
 Wire Wire Line
@@ -4628,4 +4626,12 @@ Text Label 7975 2500 1    50   ~ 0
 MISO
 Text Label 8075 2500 1    50   ~ 0
 SCK
+Text HLabel 3825 3825 0    50   Input ~ 0
+BUS_TX_EN
+Text HLabel 3825 3925 0    50   Input ~ 0
+BUS_RX_EN
+Wire Wire Line
+	3825 3825 3925 3825
+Wire Wire Line
+	3825 3925 3925 3925
 $EndSCHEMATC
