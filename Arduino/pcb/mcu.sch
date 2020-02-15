@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:floppyorgel-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -4590,9 +4589,11 @@ Wire Wire Line
 Wire Wire Line
 	3825 3925 3925 3925
 $Comp
-L Connector:AVR-ISP-6 J10
+L floppyorgel-rescue:AVR-ISP-6-Connector J10
 U 1 1 5D9FFF31
 P 9425 5225
+AR Path="/5D9FFF31" Ref="J10"  Part="1" 
+AR Path="/5CCFEC3E/5D9FFF31" Ref="J10"  Part="1" 
 F 0 "J10" H 9146 5321 50  0000 R CNN
 F 1 "AVR-ISP-6" H 9146 5230 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 9175 5275 50  0001 C CNN
