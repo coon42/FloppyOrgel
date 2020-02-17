@@ -119,10 +119,6 @@ F 3 "~" H 10800 1200 50  0001 C CNN
 $EndComp
 Text Label 10900 1300 0    50   ~ 0
 20V
-Text Label 4375 1775 2    50   ~ 0
-BP
-Text Label 4375 1475 2    50   ~ 0
-BM
 Wire Wire Line
 	10900 1300 10800 1300
 Wire Wire Line
@@ -189,22 +185,6 @@ F 3 "" H 7550 1425 50  0001 C CNN
 	1    7550 1425
 	1    0    0    -1  
 $EndComp
-Text Label 7350 1525 2    50   ~ 0
-BP
-Text Label 7350 1625 2    50   ~ 0
-BM
-Text Label 8150 1525 0    50   ~ 0
-BP
-Text Label 9650 1525 0    50   ~ 0
-BP
-Text Label 8850 1525 2    50   ~ 0
-BP
-Text Label 8850 1625 2    50   ~ 0
-BM
-Text Label 8150 1625 0    50   ~ 0
-BM
-Text Label 9650 1625 0    50   ~ 0
-BM
 Text Notes 7750 1925 0    50   ~ 0
 Ports can be used to daisychain multiple\nfloppy boards. Direction doesn't matter.
 Wire Notes Line
@@ -281,4 +261,24 @@ Wire Wire Line
 	5975 2075 5975 2275
 Wire Wire Line
 	5975 975  5975 1175
+Text Label 4375 1475 2    50   ~ 0
+BUS-
+Text Label 4375 1775 2    50   ~ 0
+BUS+
+Text Label 7350 1525 2    50   ~ 0
+BUS+
+Text Label 7350 1625 2    50   ~ 0
+BUS-
+Text Label 8150 1525 0    50   ~ 0
+BUS+
+Text Label 8150 1625 0    50   ~ 0
+BUS-
+Text Label 8850 1525 2    50   ~ 0
+BUS+
+Text Label 8850 1625 2    50   ~ 0
+BUS-
+Text Label 9650 1525 0    50   ~ 0
+BUS+
+Text Label 9650 1625 0    50   ~ 0
+BUS-
 $EndSCHEMATC
